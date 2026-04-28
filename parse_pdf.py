@@ -29,7 +29,10 @@ def extract_text():
 
 
 def clean_headers(text):
-    text = re.sub(r"Depósito Legal:[^\n]+\n\s*https?://[^\n]+\n", "\n", text)
+    # Depósito Legal line + optional blank line + URL line
+    text = re.sub(r"Depósito Legal:[^\n]+\n\s*\n?\s*https?://[^\n]+\n?", "\n", text)
+    # Standalone URL lines that slipped through (e.g. when separated by extra whitespace)
+    text = re.sub(r"^\s*https?://www\.juntadeandalucia\.es/eboja\s*$", "", text, flags=re.MULTILINE)
     text = re.sub(r"^\s*00336841\s*$", "", text, flags=re.MULTILINE)
     text = re.sub(
         r"(?:BOJA\s*\n\s*)?Boletín Oficial de la Junta de Andalucía\s*\n[^\n]+\n\s*página \d+/\d+",
@@ -39,6 +42,10 @@ def clean_headers(text):
         r"Boletín Oficial de la Junta de Andalucía\s*\n\s*BOJA\s*\n[^\n]+\n\s*página \d+/\d+",
         "", text,
     )
+    # Date lines and standalone BOJA residue
+    text = re.sub(r"^\s*Número \d+ C\d+ - [^\n]+\n?", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s*página \d+/\d+\s*$", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s*BOJA\s*$", "", text, flags=re.MULTILINE)
     return text
 
 
@@ -99,11 +106,21 @@ def section_text(block, sec_num):
     return block[content_start:content_end]
 
 
+_JUNK = re.compile(
+    r"^(?:BOJA|00336841"
+    r"|Depósito Legal:[^\n]+"
+    r"|https?://www\.juntadeandalucia\.es/eboja"
+    r"|Boletín Oficial de la Junta de Andalucía"
+    r"|Número \d+ C\d+ - .+"
+    r"|página \d+/\d+"
+    r")$"
+)
+
 def _chunks(text):
     parts = [c.strip() for c in re.split(r"\n\s*\n", text) if c.strip()]
     return [
         p for p in parts
-        if p not in ("BOJA", "00336841")
+        if not _JUNK.match(p)
         and not re.match(r"^\d+\.(?:\d+\.)?\s+[A-ZÁÉÍÓÚÜÑ]", p)
     ]
 
@@ -213,6 +230,51 @@ def parse_candidate(block):
         if entity:
             cargos[0].setdefault("Entidad u organismo", entity)
         bienes = [r for r in bienes if r not in phantom]
+
+    # Some bienes rows have the valor catastral stuck in the Clave, Tipo or Situación field
+    # because pdftotext displaced columns. Recover the value when Valor catastral is missing.
+    _money_pat = re.compile(r"^[\d.,\s]+€")
+    _all_money = re.compile(r"[\d.]+,\d{2}")
+    for r in bienes:
+        if r.get("Valor catastral (euros)") is not None:
+            continue
+        for field in ("Clave", "Tipo", "Situación"):
+            val_str = str(r.get(field) or "")
+            if _money_pat.match(val_str):
+                # Sum all money values in the field (merged multi-row chunks have multiple)
+                vals = [float(m.replace(".", "").replace(",", ".")) for m in _all_money.findall(val_str)]
+                r["Valor catastral (euros)"] = round(sum(vals), 2) if vals else None
+                if field == "Clave":
+                    r["Clave"] = None
+                break
+
+    # Filter phantom bienes rows: cross-section leaks and fully-empty ghost rows.
+    _phantom_clave = re.compile(
+        r"^(?:Actividad|Entidad[ ,]|DEPÓSITOS Y OTROS VALORES|VALORES MOBILIARIOS)",
+        re.IGNORECASE,
+    )
+    bienes = [
+        r for r in bienes
+        if not _phantom_clave.match(str(r.get("Clave") or ""))
+        and any(v for v in r.values() if v is not None and v != "")
+    ]
+
+    # Recover displaced Entidad for null-entity acciones. pdftotext sometimes outputs the
+    # Entidad column of section 2.3 after subsequent section headers. Look for it in the
+    # block text outside the 2.3 range and backfill into rows that have a value but no entity.
+    null_acc = [r for r in acciones if r.get("Entidad") is None and r.get("Valor (euros)") is not None]
+    if null_acc:
+        m23 = re.search(r"(?m)^\s*2\.3\.", block)
+        if m23:
+            after_23 = block[m23.end():]
+            em = re.search(r"(?m)^Entidad\s*$", after_23)
+            if em:
+                entity_lines = [
+                    l.strip() for l in after_23[em.end():].split("\n")
+                    if l.strip() and not re.match(r"^\d+\.", l.strip())
+                ]
+                for r, entity in zip(null_acc, entity_lines[:len(null_acc)]):
+                    r["Entidad"] = entity
 
     saldo_text = sec("2.2")
     saldo_m = re.search(r"[\d.,]+\s*€", saldo_text)

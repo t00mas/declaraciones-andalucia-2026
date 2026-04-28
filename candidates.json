@@ -823,10 +823,6 @@
       {
         "Descripción": "TESLA Y",
         "Valor (euros)": 40000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -1014,10 +1010,6 @@
         "Valor (euros)": 34430.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": "ALLIANZ VIDA RIESGO",
         "Valor (euros)": null
       }
@@ -1169,9 +1161,6 @@
         "Tipo": "V",
         "Situación": "Almería",
         "Valor catastral (euros)": 8698.82
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -1302,10 +1291,6 @@
       {
         "Descripción": "crédito compra automóvil",
         "Valor (euros)": 5638.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -1839,9 +1824,6 @@
       {
         "Actividad": "AUXILIAR ADMINISTRATIVO",
         "Empresa en la que se trabaja/Autónomo": "GESYCAL, SL"
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [
@@ -1981,10 +1963,6 @@
       {
         "Descripción": "HIPOTECA (50,00 %)",
         "Valor (euros)": 120000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -2133,19 +2111,12 @@
     ],
     "actividades_privadas": [
       {
-        "Actividad": "Boletín Oficial de la Junta de Andalucía",
-        "Empresa en la que se trabaja/Autónomo": "BOJA Clave P"
+        "Actividad": "Clave P",
+        "Empresa en la que se trabaja/Autónomo": "Tipo V"
       },
       {
-        "Actividad": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Empresa en la que se trabaja/Autónomo": "página 5604/18"
-      },
-      {
-        "Actividad": "Tipo V",
-        "Empresa en la que se trabaja/Autónomo": "Situación Almería - 2021"
-      },
-      {
-        "Actividad": "Valor catastral (euros) 40.720,00 €"
+        "Actividad": "Situación Almería - 2021",
+        "Empresa en la que se trabaja/Autónomo": "Valor catastral (euros) 40.720,00 €"
       }
     ],
     "bienes_inmuebles": [],
@@ -2291,12 +2262,7 @@
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "Entidad Acciones CaixaBank régimen ganancial 50% (50,00 %) Plan de pensiones CaixaBank Ambición flexible",
-        "Tipo": "Valor (euros) 1.711,05 € 9.558,50 €"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -3183,11 +3149,7 @@
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -3331,9 +3293,6 @@
         "Entidad, organismo, empresa o sociedad": "",
         "Actividad desempeñada": "",
         "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -3469,12 +3428,7 @@
       }
     ],
     "seguros_vida": [],
-    "creditos_deudas": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ]
+    "creditos_deudas": []
   },
   {
     "nombre": "SALMERÓN HINOJOSA, LUIS MARÍA",
@@ -4425,7 +4379,7 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "NINGUNONBI BEARINGS EUROPE",
         "Valor (euros)": 6150.0
       }
     ],
@@ -4556,10 +4510,6 @@
       {
         "Descripción": "Préstamo Personal",
         "Valor (euros)": 13392.97
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -4729,9 +4679,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [],
@@ -5264,10 +5211,6 @@
         "Valor (euros)": 12752.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": "MUTUA MADRILEÑA",
         "Valor (euros)": null
       }
@@ -5397,27 +5340,22 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "ALMERÍA",
     "saldo_bancario": 3239.01,
-    "valor_inmuebles": 5604.0,
+    "valor_inmuebles": 5479.43,
     "total_acciones": null,
     "total_vehiculos": 25536.38,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 34379.39,
-    "patrimonio_neto": 34379.39,
+    "total_activos": 34254.82,
+    "patrimonio_neto": 34254.82,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "Boletín Oficial de la Junta de Andalucía",
-        "Tipo": "BOJA P",
-        "Situación": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Valor catastral (euros)": 5604.0
-      },
-      {
-        "Clave": "L",
-        "Tipo": "Almería (50,00 %)",
-        "Situación": "5.479,43 €"
+        "Clave": "P",
+        "Tipo": "L",
+        "Situación": "Almería (50,00 %)",
+        "Valor catastral (euros)": 5479.43
       }
     ],
     "acciones_valores": [],
@@ -5783,7 +5721,7 @@
     "bienes_inmuebles": [],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "TRIODOS BANK",
         "Valor (euros)": 172409.0
       }
     ],
@@ -6227,9 +6165,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [],
@@ -6368,13 +6303,12 @@
         "Fecha de inicio": ""
       },
       {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja",
-        "Actividad desempeñada": "APELLIDOS, NOMBRE: PÉREZ GONZÁLEZ, SUSANA CIRCUNSCRIPCIÓN: ALMERÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
-        "Fecha de inicio": "Ayuntamiento de Coria del Río"
+        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: PÉREZ GONZÁLEZ, SUSANA CIRCUNSCRIPCIÓN: ALMERÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
+        "Actividad desempeñada": "Ayuntamiento de Coria del Río",
+        "Fecha de inicio": "Asesora de Gabinete"
       },
       {
-        "Entidad, organismo, empresa o sociedad": "Asesora de Gabinete",
-        "Actividad desempeñada": "01/11/2023"
+        "Entidad, organismo, empresa o sociedad": "01/11/2023"
       }
     ],
     "actividades_privadas": [],
@@ -7022,13 +6956,13 @@
     "partido": "IZQUIERDA ANTICAPITALISTA REVOLUCIONARIA",
     "circunscripcion": "ALMERÍA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 21553.0,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": null,
-    "patrimonio_neto": null,
+    "total_activos": 21553.0,
+    "patrimonio_neto": 21553.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -7039,7 +6973,8 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "21.553,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 21553.0
       }
     ],
     "acciones_valores": [],
@@ -7153,10 +7088,6 @@
       {
         "Descripción": "UNICAJA PRÉSTAMO HIPOTECARIO",
         "Valor (euros)": 150940.91
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -7277,11 +7208,11 @@
     "bienes_inmuebles": [],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "SANTANDER",
         "Valor (euros)": 17335.0
       },
       {
-        "Entidad": null,
+        "Entidad": "SANTANDER",
         "Valor (euros)": 10497.42
       }
     ],
@@ -8273,13 +8204,12 @@
         "Fecha de inicio": ""
       },
       {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja",
-        "Actividad desempeñada": "APELLIDOS, NOMBRE: AYUSO MARENTE, JOSÉ ANTONIO CIRCUNSCRIPCIÓN: CÁDIZ PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
-        "Fecha de inicio": "Consejería de Desarrollo Educativo"
+        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: AYUSO MARENTE, JOSÉ ANTONIO CIRCUNSCRIPCIÓN: CÁDIZ PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
+        "Actividad desempeñada": "Consejería de Desarrollo Educativo",
+        "Fecha de inicio": "Maestro de Pedagogía Terapéutica"
       },
       {
-        "Entidad, organismo, empresa o sociedad": "Maestro de Pedagogía Terapéutica",
-        "Actividad desempeñada": "01/01/1990"
+        "Entidad, organismo, empresa o sociedad": "01/01/1990"
       }
     ],
     "actividades_privadas": [],
@@ -8407,7 +8337,7 @@
     "patrimonio_neto": 6500.0,
     "cargos_publicos": [
       {
-        "Entidad u organismo": "BOJA Entidad u organismo Ayuntamiento de Conil de la Frontera",
+        "Entidad u organismo": "Ayuntamiento de Conil de la Frontera",
         "Cargo desempeñado": "Alcaldesa",
         "Fecha de nombramiento": "17/06/2023"
       }
@@ -9237,8 +9167,7 @@
         "Empresa en la que se trabaja/Autónomo": "La Cayetana"
       },
       {
-        "Actividad": "https://www.juntadeandalucia.es/eboja",
-        "Empresa en la que se trabaja/Autónomo": "Entidad, organismo, empresa o sociedad No"
+        "Actividad": "Entidad, organismo, empresa o sociedad No"
       }
     ],
     "bienes_inmuebles": [
@@ -9316,12 +9245,12 @@
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": 1000.0,
     "valor_inmuebles": 481000.0,
-    "total_acciones": 30410.0,
+    "total_acciones": 30000.0,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 60000.0,
-    "total_activos": 512410.0,
-    "patrimonio_neto": 452410.0,
+    "total_activos": 512000.0,
+    "patrimonio_neto": 452000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento Arcos de la Frontera",
@@ -9387,20 +9316,12 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
-        "Valor (euros)": 410.0
-      },
-      {
-        "Entidad": null,
+        "Entidad": "Participación indivisa Polideportivo del Santiscal (50,00 %)",
         "Valor (euros)": 12000.0
       },
       {
-        "Entidad": null,
+        "Entidad": "Renault Megane - Renault Megane (50,00 %)",
         "Valor (euros)": 15000.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
       }
     ],
     "vehiculos_otros": [],
@@ -9484,9 +9405,9 @@
     "total_acciones": null,
     "total_vehiculos": 16500.0,
     "total_seguros": 50000.0,
-    "total_deudas": 134410.0,
+    "total_deudas": 134000.0,
     "total_activos": 182100.0,
-    "patrimonio_neto": 47690.0,
+    "patrimonio_neto": 48100.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE BENAOCAZ",
@@ -9546,10 +9467,6 @@
       {
         "Descripción": "HIPOTECA",
         "Valor (euros)": 40000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 410.0
       }
     ]
   },
@@ -10525,13 +10442,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 33000.0,
     "total_acciones": null,
     "total_vehiculos": 34000.0,
     "total_seguros": null,
     "total_deudas": 62188.0,
-    "total_activos": 34000.0,
-    "patrimonio_neto": -28188.0,
+    "total_activos": 67000.0,
+    "patrimonio_neto": 4812.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "GOBIERNO DE ANDALUCIA",
@@ -10543,7 +10460,8 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "33.000,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 33000.0
       }
     ],
     "acciones_valores": [],
@@ -10696,13 +10614,12 @@
         "Fecha de nombramiento": ""
       },
       {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja",
-        "Cargo desempeñado": "APELLIDOS, NOMBRE: PINTOR ALONSO, MARÍA PILAR PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
-        "Fecha de nombramiento": "AYUNTAMIENTO DE ALGECIRAS"
+        "Entidad u organismo": "APELLIDOS, NOMBRE: PINTOR ALONSO, MARÍA PILAR PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
+        "Cargo desempeñado": "AYUNTAMIENTO DE ALGECIRAS",
+        "Fecha de nombramiento": "CONCEJAL"
       },
       {
-        "Entidad u organismo": "CONCEJAL",
-        "Cargo desempeñado": "17/06/2023"
+        "Entidad u organismo": "17/06/2023"
       }
     ],
     "actividades_publicas": [],
@@ -11005,13 +10922,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": 35000.0,
-    "valor_inmuebles": 5604.0,
+    "valor_inmuebles": 28240.44,
     "total_acciones": 196991.76,
     "total_vehiculos": 13000.0,
     "total_seguros": 50000.0,
     "total_deudas": 56213.58,
-    "total_activos": 250595.76,
-    "patrimonio_neto": 194382.18,
+    "total_activos": 273232.2,
+    "patrimonio_neto": 217018.62,
     "cargos_publicos": [
       {
         "Entidad u organismo": "EXCMO. AYUNTAMIENTO DE CHICLANA DE LA FRONTERA PARLAMENTO DE ANDALUCIA",
@@ -11027,15 +10944,10 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "Boletín Oficial de la Junta de Andalucía",
-        "Tipo": "BOJA N",
-        "Situación": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Valor catastral (euros)": 5604.0
-      },
-      {
-        "Clave": "L",
-        "Tipo": "Cádiz (16,67 %)",
-        "Situación": "28.240,44 €"
+        "Clave": "N",
+        "Tipo": "L",
+        "Situación": "Cádiz (16,67 %)",
+        "Valor catastral (euros)": 28240.44
       }
     ],
     "acciones_valores": [
@@ -11182,10 +11094,6 @@
     "acciones_valores": [],
     "vehiculos_otros": [
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": null,
         "Valor (euros)": 1238.0
       }
@@ -11331,7 +11239,7 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "página 5604/88",
+        "Clave": "P",
         "Tipo": "V",
         "Situación": "Cádiz (12,50 %)",
         "Valor catastral (euros)": 120568.5
@@ -11430,13 +11338,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": 14000.0,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 90800.13,
     "total_acciones": null,
     "total_vehiculos": 42000.0,
     "total_seguros": 145800.0,
     "total_deudas": 180000.0,
-    "total_activos": 56000.0,
-    "patrimonio_neto": -124000.0,
+    "total_activos": 146800.13,
+    "patrimonio_neto": -33199.87,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE MEDINA SIDONIA",
@@ -11452,26 +11360,14 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "P",
+        "Situación": "O",
+        "Valor catastral (euros)": 79199.21
       },
       {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Actividad MAESTRA",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Cádiz",
-        "Tipo": "79.199,21 €",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Cádiz",
-        "Tipo": "11.600,92 €"
+        "Clave": null,
+        "Valor catastral (euros)": 11600.92
       }
     ],
     "acciones_valores": [],
@@ -12483,9 +12379,6 @@
         "Entidad u organismo": "SAN ROQUE",
         "Cargo desempeñado": "CONCEJAL",
         "Fecha de nombramiento": "17/06/2023"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [],
@@ -12617,10 +12510,6 @@
       {
         "Descripción": "PRESTAMO PERSONAL",
         "Valor (euros)": 33217.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -12739,10 +12628,6 @@
       {
         "Descripción": "DERECHO DE CRÉDITO, PRÉSTAMO PERSONAL, PENDIENTE DE COBRAR",
         "Valor (euros)": 20000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -13028,10 +12913,6 @@
       {
         "Descripción": "HIPOTECARIO SANTANDER (50,00 %)",
         "Valor (euros)": 144000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -13426,10 +13307,6 @@
       {
         "Descripción": "PRÉSTAMO HIPOTECARIO (Cantidad Pendiente) (50,00 %)",
         "Valor (euros)": 49642.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -13900,13 +13777,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": null,
-    "valor_inmuebles": 92614.0,
+    "valor_inmuebles": 93784.0,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 84000.0,
-    "total_activos": 92614.0,
-    "patrimonio_neto": 8614.0,
+    "total_activos": 93784.0,
+    "patrimonio_neto": 9784.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Trebujena",
@@ -13924,7 +13801,8 @@
         "Valor catastral (euros)": 92614.0
       },
       {
-        "Clave": "1.170,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 1170.0
       }
     ],
     "acciones_valores": [],
@@ -14158,12 +14036,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -14613,13 +14486,13 @@
     "partido": "ADELANTE ANDALUCÍA",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 22000.0,
     "total_acciones": null,
     "total_vehiculos": 8000.0,
     "total_seguros": null,
     "total_deudas": 261545.19,
-    "total_activos": 8000.0,
-    "patrimonio_neto": -253545.19,
+    "total_activos": 30000.0,
+    "patrimonio_neto": -231545.19,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -14631,7 +14504,8 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "22.000,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 22000.0
       }
     ],
     "acciones_valores": [],
@@ -14724,13 +14598,13 @@
     "partido": "ADELANTE ANDALUCÍA",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 21062.94,
-    "valor_inmuebles": 40000.0,
+    "valor_inmuebles": 47647.04,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 61062.94,
-    "patrimonio_neto": 61062.94,
+    "total_activos": 68709.98,
+    "patrimonio_neto": 68709.98,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -14747,7 +14621,8 @@
         "Valor catastral (euros)": 40000.0
       },
       {
-        "Clave": "7.647,04 €"
+        "Clave": null,
+        "Valor catastral (euros)": 7647.04
       }
     ],
     "acciones_valores": [],
@@ -14996,17 +14871,7 @@
       }
     ],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
@@ -15096,13 +14961,13 @@
     "partido": "VOX",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 60000.0,
-    "valor_inmuebles": 5604.0,
+    "valor_inmuebles": 200000.0,
     "total_acciones": 10000.0,
     "total_vehiculos": 6200.0,
     "total_seguros": 700000.0,
     "total_deudas": 1060000.0,
-    "total_activos": 81804.0,
-    "patrimonio_neto": -978196.0,
+    "total_activos": 276200.0,
+    "patrimonio_neto": -783800.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -15125,15 +14990,10 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "Boletín Oficial de la Junta de Andalucía",
-        "Tipo": "BOJA P",
-        "Situación": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Valor catastral (euros)": 5604.0
-      },
-      {
-        "Clave": "R",
-        "Tipo": "Córdoba - Rusticos - 2015",
-        "Situación": "200.000,00 €"
+        "Clave": "P",
+        "Tipo": "R",
+        "Situación": "Córdoba - Rusticos - 2015",
+        "Valor catastral (euros)": 200000.0
       }
     ],
     "acciones_valores": [
@@ -15188,13 +15048,13 @@
     "partido": "VOX",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 68919.13,
-    "valor_inmuebles": 367217.76,
+    "valor_inmuebles": 614251.96,
     "total_acciones": 88805.22,
     "total_vehiculos": 90300.0,
     "total_seguros": 92813.69,
     "total_deudas": 95770.39,
-    "total_activos": 615242.11,
-    "patrimonio_neto": 519471.72,
+    "total_activos": 862276.31,
+    "patrimonio_neto": 766505.92,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -15250,7 +15110,7 @@
         "Clave": "M",
         "Tipo": "R",
         "Situación": "247.034,20 €",
-        "Valor catastral (euros)": null
+        "Valor catastral (euros)": 247034.2
       },
       {
         "Clave": "R",
@@ -15625,10 +15485,6 @@
     "acciones_valores": [],
     "vehiculos_otros": [
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": null,
         "Valor (euros)": 40000.0
       }
@@ -15919,10 +15775,6 @@
       {
         "Descripción": "Préstamo a un tercero",
         "Valor (euros)": 12000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -16631,7 +16483,7 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "KUTXABANK (FONDOS DE INVERISONES)",
         "Valor (euros)": 7.0
       },
       {
@@ -16639,11 +16491,11 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "KUTXBANK (PLAN PENSIONES)",
         "Valor (euros)": 15000.0
       },
       {
-        "Entidad": null,
+        "Entidad": "INDUSTRIAS PECUARIAS PEDROCHES (ACCIONES)",
         "Valor (euros)": 20000.0
       }
     ],
@@ -16802,9 +16654,6 @@
         "Tipo": "V",
         "Situación": "Córdoba (50,00 %)",
         "Valor catastral (euros)": 152420.29
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [
@@ -16954,11 +16803,11 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "SANTANDER (ACCIONES)",
         "Valor (euros)": 20.0
       },
       {
-        "Entidad": null,
+        "Entidad": "Valor (euros)",
         "Valor (euros)": 8000.0
       }
     ],
@@ -17132,18 +16981,17 @@
         "Fecha de nombramiento": ""
       },
       {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja",
-        "Cargo desempeñado": "APELLIDOS, NOMBRE: POZO ROMERO, TATIANA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
-        "Fecha de nombramiento": "AYUNTAMIENTO PUENTE GENIL"
+        "Entidad u organismo": "APELLIDOS, NOMBRE: POZO ROMERO, TATIANA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
+        "Cargo desempeñado": "AYUNTAMIENTO PUENTE GENIL",
+        "Fecha de nombramiento": "2 TTE ALCALDE"
       },
       {
-        "Entidad u organismo": "2 TTE ALCALDE",
-        "Cargo desempeñado": "17/06/2023",
-        "Fecha de nombramiento": "EXCMA DIPUTACIÓN DE CÓRDOBA"
+        "Entidad u organismo": "17/06/2023",
+        "Cargo desempeñado": "EXCMA DIPUTACIÓN DE CÓRDOBA",
+        "Fecha de nombramiento": "DIPUTADA PROVINCIAL"
       },
       {
-        "Entidad u organismo": "DIPUTADA PROVINCIAL",
-        "Cargo desempeñado": "19/06/2023"
+        "Entidad u organismo": "19/06/2023"
       }
     ],
     "actividades_publicas": [],
@@ -17458,13 +17306,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 48050.0,
     "total_acciones": 2805.54,
     "total_vehiculos": 24000.0,
     "total_seguros": 60000.0,
     "total_deudas": 124000.0,
-    "total_activos": 26805.54,
-    "patrimonio_neto": -97194.46,
+    "total_activos": 74855.54,
+    "patrimonio_neto": -49144.46,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO MONTILLA",
@@ -17481,7 +17329,8 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "48.000,00 € (50,00 %)"
+        "Clave": null,
+        "Valor catastral (euros)": 48050.0
       }
     ],
     "acciones_valores": [
@@ -18078,9 +17927,9 @@
     "total_acciones": 64000.0,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": 25410.0,
+    "total_deudas": 25000.0,
     "total_activos": 209000.0,
-    "patrimonio_neto": 183590.0,
+    "patrimonio_neto": 184000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -18133,10 +17982,6 @@
       {
         "Descripción": null,
         "Valor (euros)": null
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 410.0
       }
     ]
   },
@@ -18393,7 +18238,7 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "MUTUTALIDAD DE LA ABOGACIA",
         "Valor (euros)": 9000.0
       }
     ],
@@ -18578,10 +18423,6 @@
         "Valor (euros)": 125000.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": "SEGURO VIDA HIPOTECA CAIXABANK",
         "Valor (euros)": null
       },
@@ -18695,13 +18536,13 @@
     "partido": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 68500.0,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 53603.48,
     "total_acciones": null,
     "total_vehiculos": 18000.0,
     "total_seguros": null,
     "total_deudas": 12000.0,
-    "total_activos": 86500.0,
-    "patrimonio_neto": 74500.0,
+    "total_activos": 140103.48,
+    "patrimonio_neto": 128103.48,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE LUCENA",
@@ -18733,26 +18574,14 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "P",
+        "Situación": "O",
+        "Valor catastral (euros)": 49327.27
       },
       {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Actividad ABOGACÍA",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Córdoba",
-        "Tipo": "49.327,27 €",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Córdoba",
-        "Tipo": "4.276,21 €"
+        "Clave": null,
+        "Valor catastral (euros)": 4276.21
       }
     ],
     "acciones_valores": [],
@@ -19008,7 +18837,7 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "La Caixa",
         "Valor (euros)": 57000.0
       }
     ],
@@ -19483,13 +19312,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 1653.98,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 22725.46,
     "total_acciones": 33.13,
     "total_vehiculos": 6300.0,
     "total_seguros": null,
     "total_deudas": 1965.88,
-    "total_activos": 7987.11,
-    "patrimonio_neto": 6021.23,
+    "total_activos": 30712.57,
+    "patrimonio_neto": 28746.69,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -19500,25 +19329,8 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Entidad, organismo, empresa o sociedad CONSEJERÍA DE DESARROLLO EDUCATIVO Y FORMACIÓN PROFESIONAL DE LA JUNTA DE ANDALUCÍA",
-        "Situación": "Boletín Oficial de la Junta de Andalucía",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Tipo": "página 5604/148",
-        "Situación": "V",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "22.725,46 €"
+        "Clave": null,
+        "Valor catastral (euros)": 22725.46
       }
     ],
     "acciones_valores": [
@@ -19717,13 +19529,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": null,
-    "valor_inmuebles": 36834.37,
+    "valor_inmuebles": 43834.37,
     "total_acciones": null,
     "total_vehiculos": 12000.0,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 48834.37,
-    "patrimonio_neto": 48834.37,
+    "total_activos": 55834.37,
+    "patrimonio_neto": 55834.37,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -19740,7 +19552,8 @@
         "Valor catastral (euros)": 36834.37
       },
       {
-        "Clave": "7.000,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 7000.0
       }
     ],
     "acciones_valores": [],
@@ -19877,11 +19690,7 @@
     "actividades_publicas": [
       {
         "Entidad, organismo, empresa o sociedad": "Actividad INGENIEROS LICENCIADOS AUXILIAR ADMINISTRATIVO",
-        "Actividad desempeñada": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Fecha de inicio": "Empresa en la que se trabaja/Autónomo ERSITAT INTER.VALC.-VALENCIAN INTER.UNIVERSITY, S.L. ADELANTE ANDALUCÍA"
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
+        "Actividad desempeñada": "Empresa en la que se trabaja/Autónomo ERSITAT INTER.VALC.-VALENCIAN INTER.UNIVERSITY, S.L. ADELANTE ANDALUCÍA"
       }
     ],
     "actividades_privadas": [],
@@ -19983,9 +19792,9 @@
     "total_acciones": null,
     "total_vehiculos": 5000.0,
     "total_seguros": null,
-    "total_deudas": 100410.0,
+    "total_deudas": 100000.0,
     "total_activos": 44671.15,
-    "patrimonio_neto": -55738.85,
+    "patrimonio_neto": -55328.85,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -20015,10 +19824,6 @@
       {
         "Descripción": "HIPOTECA",
         "Valor (euros)": 100000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 410.0
       }
     ]
   },
@@ -20143,9 +19948,6 @@
         "Tipo": "V",
         "Situación": "Almería",
         "Valor catastral (euros)": 47871.46
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -20231,9 +20033,9 @@
     "total_acciones": 24516.24,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": 13177.17,
+    "total_deudas": 12767.17,
     "total_activos": 176437.42,
-    "patrimonio_neto": 163260.25,
+    "patrimonio_neto": 163670.25,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -20287,10 +20089,6 @@
       {
         "Descripción": "CETELEM",
         "Valor (euros)": 12767.17
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 410.0
       }
     ]
   },
@@ -20420,13 +20218,13 @@
     "partido": "ADELANTE ANDALUCÍA",
     "circunscripcion": "GRANADA",
     "saldo_bancario": null,
-    "valor_inmuebles": 19041.33,
+    "valor_inmuebles": 33725.33,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 19041.33,
-    "patrimonio_neto": 19041.33,
+    "total_activos": 33725.33,
+    "patrimonio_neto": 33725.33,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -20444,7 +20242,8 @@
         "Valor catastral (euros)": 19041.33
       },
       {
-        "Clave": "14.684,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 14684.0
       }
     ],
     "acciones_valores": [],
@@ -20798,13 +20597,13 @@
     "partido": "VOX",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 6000.0,
-    "valor_inmuebles": 153222.9,
+    "valor_inmuebles": 155178.79,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": 180000.0,
     "total_deudas": null,
-    "total_activos": 159222.9,
-    "patrimonio_neto": 159222.9,
+    "total_activos": 161178.79,
+    "patrimonio_neto": 161178.79,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -20837,7 +20636,8 @@
         "Valor catastral (euros)": 2568.11
       },
       {
-        "Clave": "1.955,89 €"
+        "Clave": null,
+        "Valor catastral (euros)": 1955.89
       }
     ],
     "acciones_valores": [],
@@ -20980,9 +20780,6 @@
         "Entidad, organismo, empresa o sociedad": "",
         "Actividad desempeñada": "",
         "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -21161,9 +20958,6 @@
         "Tipo": "V",
         "Situación": "Granada",
         "Valor catastral (euros)": 96000.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [
@@ -21735,13 +21529,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 52795.13,
-    "valor_inmuebles": 84640.83,
+    "valor_inmuebles": 88581.49,
     "total_acciones": 20512.88,
     "total_vehiculos": null,
     "total_seguros": 82038.0,
     "total_deudas": 6627.25,
-    "total_activos": 157948.84,
-    "patrimonio_neto": 151321.59,
+    "total_activos": 161889.5,
+    "patrimonio_neto": 155262.25,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -21761,7 +21555,8 @@
       {
         "Clave": "Granada - OTROS INMUEBLES URBANOS 4,76% NP 2,38%",
         "Tipo": "3.940,66 €",
-        "Situación": "6.033,03 €"
+        "Situación": "6.033,03 €",
+        "Valor catastral (euros)": 3940.66
       }
     ],
     "acciones_valores": [
@@ -21860,13 +21655,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 1525.0,
-    "valor_inmuebles": 220105.64,
+    "valor_inmuebles": 262069.7,
     "total_acciones": null,
     "total_vehiculos": 10000.0,
     "total_seguros": 150000.0,
     "total_deudas": 336326.06,
-    "total_activos": 231630.64,
-    "patrimonio_neto": -104695.42,
+    "total_activos": 273594.7,
+    "patrimonio_neto": -62731.36,
     "cargos_publicos": [
       {
         "Entidad u organismo": "PARLAMENTO DE ANDALUCÍA",
@@ -21902,15 +21697,11 @@
         "Valor catastral (euros)": 9404.15
       },
       {
-        "Clave": "41.964,06 €"
+        "Clave": null,
+        "Valor catastral (euros)": 41964.06
       }
     ],
-    "acciones_valores": [
-      {
-        "Entidad": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "acciones_valores": [],
     "vehiculos_otros": [
       {
         "Descripción": "JEEP GRAND CHEEROKEE",
@@ -22065,7 +21856,7 @@
     ],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "CAJA RURAL DE GRANADA",
         "Valor (euros)": 20100.0
       }
     ],
@@ -22073,10 +21864,6 @@
       {
         "Descripción": "AUDI Q3 SPORTBACK 35",
         "Valor (euros)": 22000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       },
       {
         "Descripción": null,
@@ -22437,12 +22224,12 @@
     "circunscripcion": "GRANADA",
     "saldo_bancario": 7251.5,
     "valor_inmuebles": 105040.95,
-    "total_acciones": 165646.0,
+    "total_acciones": 165236.0,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 208479.18,
-    "total_activos": 277938.45,
-    "patrimonio_neto": 69459.27,
+    "total_activos": 277528.45,
+    "patrimonio_neto": 69049.27,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE BAZA",
@@ -22485,32 +22272,24 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "NOVATIC CONSULTORES S.C (1,00 %)",
         "Valor (euros)": 1.0
       },
       {
-        "Entidad": null,
+        "Entidad": "Valor (euros)",
         "Valor (euros)": 135.0
       },
       {
-        "Entidad": null,
-        "Valor (euros)": 410.0
-      },
-      {
-        "Entidad": null,
+        "Entidad": "Descripción",
         "Valor (euros)": 25000.0
       },
       {
-        "Entidad": null,
+        "Entidad": "AUTOMOVIL TURISMO - MG PHEV",
         "Valor (euros)": 9000.0
       },
       {
-        "Entidad": null,
+        "Entidad": "AUTOMOVIL TURISMO - DACIA DUSTER 1.5",
         "Valor (euros)": 115000.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
       }
     ],
     "vehiculos_otros": [],
@@ -23637,10 +23416,6 @@
       {
         "Descripción": "PRÉSTAMO AUTOMOVIL (50,00 %)",
         "Valor (euros)": 3000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -23920,9 +23695,6 @@
         "Entidad u organismo": "Ayuntamiento de Pampaneira",
         "Cargo desempeñado": "Alcalde - Presidente",
         "Fecha de nombramiento": "13/06/2015"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [],
@@ -24190,12 +23962,7 @@
         "Valor catastral (euros)": 69329.81
       }
     ],
-    "acciones_valores": [
-      {
-        "Entidad": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "acciones_valores": [],
     "vehiculos_otros": [
       {
         "Descripción": "COCHE PARTICULAR",
@@ -24306,13 +24073,13 @@
     "partido": "SE ACABÓ LA FIESTA",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 50000.0,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 89475.23,
     "total_acciones": null,
     "total_vehiculos": 30000.0,
     "total_seguros": 110000.0,
     "total_deudas": 14000.0,
-    "total_activos": 80000.0,
-    "patrimonio_neto": 66000.0,
+    "total_activos": 169475.23,
+    "patrimonio_neto": 155475.23,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -24322,32 +24089,20 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "P",
+        "Situación": "O",
+        "Valor catastral (euros)": 67709.93
       },
       {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Actividad COORDINADORA DE CENTRO",
-        "Situación": "P",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "P",
+        "Situación": "O",
+        "Valor catastral (euros)": 9870.13
       },
       {
-        "Clave": "Granada",
-        "Tipo": "67.709,93 €",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Granada",
-        "Tipo": "9.870,13 €",
-        "Situación": "P",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Granada",
-        "Tipo": "11.895,17 €"
+        "Clave": null,
+        "Valor catastral (euros)": 11895.17
       }
     ],
     "acciones_valores": [],
@@ -25165,11 +24920,7 @@
       }
     ],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -25304,7 +25055,7 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "página 5604/189",
+        "Clave": "P",
         "Tipo": "V",
         "Situación": "Granada (50,00 %)",
         "Valor catastral (euros)": 150000.0
@@ -25430,9 +25181,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [],
@@ -25557,9 +25305,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [
@@ -25809,9 +25554,6 @@
         "Entidad, organismo, empresa o sociedad": "CONSEJERÍA DE EDUCACIÓN JUNTA DE ANDALUCÍA",
         "Actividad desempeñada": "PROFESOR",
         "Fecha de inicio": "01/09/2018"
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -26029,10 +25771,6 @@
       {
         "Descripción": "SEGURO DE VIDA HIPOTECA BBVA",
         "Valor (euros)": 50000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "creditos_deudas": [
@@ -26489,13 +26227,13 @@
     "partido": "VOX",
     "circunscripcion": "HUELVA",
     "saldo_bancario": 125000.0,
-    "valor_inmuebles": 207305.0,
+    "valor_inmuebles": 218155.0,
     "total_acciones": null,
     "total_vehiculos": 50000.0,
     "total_seguros": 237200.0,
     "total_deudas": 71889.0,
-    "total_activos": 382305.0,
-    "patrimonio_neto": 310416.0,
+    "total_activos": 393155.0,
+    "patrimonio_neto": 321266.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -26530,7 +26268,8 @@
         "Valor catastral (euros)": 30120.0
       },
       {
-        "Clave": "10.800,00 € (50,00 %)"
+        "Clave": null,
+        "Valor catastral (euros)": 10850.0
       }
     ],
     "acciones_valores": [],
@@ -26674,12 +26413,7 @@
       }
     ],
     "seguros_vida": [],
-    "creditos_deudas": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ]
+    "creditos_deudas": []
   },
   {
     "nombre": "GARCÍA HEREDIA, FRANCISCO JOSÉ",
@@ -26928,12 +26662,7 @@
       }
     ],
     "seguros_vida": [],
-    "creditos_deudas": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ]
+    "creditos_deudas": []
   },
   {
     "nombre": "SALVATELLAS DE LOS SANTOS, ALEJANDRO",
@@ -27706,10 +27435,6 @@
       {
         "Descripción": "PRÉSTAMO PERSONAL BANCO DE SANTANDER",
         "Valor (euros)": 7272.91
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -27835,10 +27560,6 @@
         "Valor (euros)": 8000.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": null,
         "Valor (euros)": 39000.0
       }
@@ -27903,9 +27624,9 @@
     "total_acciones": null,
     "total_vehiculos": 35100.0,
     "total_seguros": null,
-    "total_deudas": 37710.0,
+    "total_deudas": 37300.0,
     "total_activos": 153354.16,
-    "patrimonio_neto": 115644.16,
+    "patrimonio_neto": 116054.16,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -27950,10 +27671,6 @@
       {
         "Descripción": "HIPOTECA DE LOCAL (33%)",
         "Valor (euros)": 37300.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 410.0
       }
     ]
   },
@@ -28530,13 +28247,13 @@
     "partido": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
     "circunscripcion": "HUELVA",
     "saldo_bancario": 3800.86,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 32322.53,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 76936.99,
-    "total_activos": 3800.86,
-    "patrimonio_neto": -73136.13,
+    "total_activos": 36123.39,
+    "patrimonio_neto": -40813.6,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -28547,25 +28264,8 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Entidad, organismo, empresa o sociedad AYUNTAMIENTO DE MOGUER",
-        "Situación": "Boletín Oficial de la Junta de Andalucía",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Número 79 C1 - Lunes, 27 de abril de 2026",
-        "Tipo": "página 5604/215",
-        "Situación": "V",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "32.322,53 €"
+        "Clave": null,
+        "Valor catastral (euros)": 32322.53
       }
     ],
     "acciones_valores": [],
@@ -28664,12 +28364,7 @@
       }
     ],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS. Entidad 12.624 ACCIONES SOCIEDAD PORTUARIA DE BUENAVENTURA -COLOMBIA (50,00 %)",
-        "Tipo": "Valor (euros) 19.637,00 €"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
@@ -29430,11 +29125,7 @@
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
@@ -29690,17 +29381,7 @@
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
@@ -29783,13 +29464,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "HUELVA",
     "saldo_bancario": 26000.0,
-    "valor_inmuebles": 41742.29,
+    "valor_inmuebles": 77436.29,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": 50000.0,
     "total_deudas": 64773.61,
-    "total_activos": 67742.29,
-    "patrimonio_neto": 2968.68,
+    "total_activos": 103436.29,
+    "patrimonio_neto": 38662.68,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento Valverde del Camino",
@@ -29807,7 +29488,8 @@
         "Valor catastral (euros)": 41742.29
       },
       {
-        "Clave": "35.694,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 35694.0
       }
     ],
     "acciones_valores": [],
@@ -30041,13 +29723,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "HUELVA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 170.79,
     "total_acciones": null,
     "total_vehiculos": 12000.0,
     "total_seguros": null,
     "total_deudas": 10682.91,
-    "total_activos": 12000.0,
-    "patrimonio_neto": 1317.09,
+    "total_activos": 12170.79,
+    "patrimonio_neto": 1487.88,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -30062,7 +29744,8 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "170,79 €"
+        "Clave": null,
+        "Valor catastral (euros)": 170.79
       }
     ],
     "acciones_valores": [],
@@ -30197,9 +29880,6 @@
         "Entidad, organismo, empresa o sociedad": "",
         "Actividad desempeñada": "",
         "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -30422,10 +30102,6 @@
       {
         "Descripción": "Coche - Toyota Avensis",
         "Valor (euros)": 6800.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [
@@ -30664,7 +30340,7 @@
     ],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "Santander",
         "Valor (euros)": 10000.0
       }
     ],
@@ -30886,9 +30562,6 @@
       {
         "Actividad": "MONITOR ESCOLAR",
         "Empresa en la que se trabaja/Autónomo": "GRUPO EULEN"
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [],
@@ -31336,9 +31009,6 @@
         "Tipo": "V",
         "Situación": "Jaén",
         "Valor catastral (euros)": 13400.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [
@@ -31584,11 +31254,7 @@
       }
     ],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -31723,9 +31389,6 @@
         "Tipo": "V",
         "Situación": "Jaén",
         "Valor catastral (euros)": 42569.18
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -31830,11 +31493,7 @@
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
@@ -32397,13 +32056,13 @@
     "partido": "ANDALUCISTAS - PUEBLO ANDALUZ",
     "circunscripcion": "JAÉN",
     "saldo_bancario": 50000.0,
-    "valor_inmuebles": 40000.0,
+    "valor_inmuebles": 240000.0,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 90000.0,
-    "patrimonio_neto": 90000.0,
+    "total_activos": 290000.0,
+    "patrimonio_neto": 290000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Higuera de Calatrava",
@@ -32425,26 +32084,20 @@
         "Valor catastral (euros)": 40000.0
       },
       {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Actividad Agricultor",
-        "Situación": "M",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "O",
+        "Valor catastral (euros)": 70000.0
       },
       {
-        "Clave": "Jaén",
-        "Tipo": "70.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "R",
+        "Valor catastral (euros)": 50000.0
       },
       {
-        "Clave": "Jaén",
-        "Tipo": "50.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Jaén",
-        "Tipo": "80.000,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 80000.0
       }
     ],
     "acciones_valores": [],
@@ -32553,13 +32206,13 @@
     "partido": "ANDALUCISTAS - PUEBLO ANDALUZ",
     "circunscripcion": "JAÉN",
     "saldo_bancario": 9000.0,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 430000.0,
     "total_acciones": null,
     "total_vehiculos": 8000.0,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 17000.0,
-    "patrimonio_neto": 17000.0,
+    "total_activos": 447000.0,
+    "patrimonio_neto": 447000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -32569,44 +32222,32 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "V",
+        "Valor catastral (euros)": 80000.0
       },
       {
-        "Clave": "https://www.juntadeandalucia.es/eboja",
-        "Tipo": "Actividad Jubilada",
-        "Situación": "M",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "V",
+        "Valor catastral (euros)": 90000.0
       },
       {
-        "Clave": "Cádiz",
-        "Tipo": "80.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "V",
+        "Valor catastral (euros)": 70000.0
       },
       {
-        "Clave": "Cádiz",
-        "Tipo": "90.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
+        "Clave": null,
+        "Tipo": "M",
+        "Situación": "L",
+        "Valor catastral (euros)": 150000.0
       },
       {
-        "Clave": "Jaén",
-        "Tipo": "70.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Jaén",
-        "Tipo": "150.000,00 €",
-        "Situación": "M",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "Jaén",
-        "Tipo": "40.000,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 40000.0
       }
     ],
     "acciones_valores": [],
@@ -33121,13 +32762,13 @@
     "partido": "VOX",
     "circunscripcion": "JAÉN",
     "saldo_bancario": null,
-    "valor_inmuebles": 159533.0,
+    "valor_inmuebles": 182440.0,
     "total_acciones": null,
     "total_vehiculos": 20000.0,
     "total_seguros": 127600.0,
     "total_deudas": 115382.2,
-    "total_activos": 179533.0,
-    "patrimonio_neto": 64150.8,
+    "total_activos": 202440.0,
+    "patrimonio_neto": 87057.8,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -33145,7 +32786,8 @@
         "Valor catastral (euros)": 159533.0
       },
       {
-        "Clave": "22.907,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 22907.0
       }
     ],
     "acciones_valores": [],
@@ -33285,8 +32927,7 @@
         "Empresa en la que se trabaja/Autónomo": "Servicios Sociosanitarios Generales S.L."
       },
       {
-        "Actividad": "https://www.juntadeandalucia.es/eboja",
-        "Empresa en la que se trabaja/Autónomo": "Entidad, organismo, empresa o sociedad funcionaria SAS"
+        "Actividad": "Entidad, organismo, empresa o sociedad funcionaria SAS"
       }
     ],
     "bienes_inmuebles": [],
@@ -33412,9 +33053,6 @@
         "Entidad u organismo": "Concejal del Ayuntamiento de Alcaudete (Jaén)",
         "Cargo desempeñado": "concejal",
         "Fecha de nombramiento": "28/11/2024"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [
@@ -33893,9 +33531,6 @@
         "Entidad u organismo": "AYUNTAMIENTO DE BEGIJAR",
         "Cargo desempeñado": "CONCEJAL",
         "Fecha de nombramiento": "17/06/2023"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [
@@ -34021,12 +33656,7 @@
       }
     ],
     "vehiculos_otros": [],
-    "seguros_vida": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": []
   },
   {
@@ -34825,10 +34455,6 @@
       {
         "Descripción": "HIPOTECA EN BBVA (100%)",
         "Valor (euros)": 151858.73
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -36511,10 +36137,6 @@
         "Valor (euros)": 74000.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": "TRACTOR - LAMBORGHINI 90.4 TARGET",
         "Valor (euros)": null
       },
@@ -36806,9 +36428,6 @@
         "Entidad, organismo, empresa o sociedad": "",
         "Actividad desempeñada": "",
         "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -36942,21 +36561,16 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "COINBASE (50,00 %)",
         "Valor (euros)": 5.0
       },
       {
-        "Entidad": null,
+        "Entidad": "TRADE REPUBLIC (50,00 %)",
         "Valor (euros)": 5544.0
       }
     ],
     "vehiculos_otros": [],
-    "seguros_vida": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": [
       {
         "Descripción": "HIPOTECA BANCARIA BBVA (50,00 %)",
@@ -37347,10 +36961,6 @@
     "acciones_valores": [],
     "vehiculos_otros": [
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": null,
         "Valor (euros)": 4871.44
       }
@@ -37582,10 +37192,6 @@
       {
         "Descripción": "PRESTAMO PERSONAL",
         "Valor (euros)": 1367.02
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "creditos_deudas": []
@@ -37837,11 +37443,7 @@
         "Empresa en la que se trabaja/Autónomo": "ALMA SL"
       }
     ],
-    "bienes_inmuebles": [
-      {
-        "Clave": "DEPÓSITOS Y OTROS VALORES MOBILIARIOS."
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -37956,10 +37558,6 @@
       {
         "Descripción": "AUTOMOVIL - Renault Zoe 50",
         "Valor (euros)": 8100.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -39393,9 +38991,6 @@
         "Tipo": "V",
         "Situación": "Málaga (50,00 %)",
         "Valor catastral (euros)": 210500.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -39549,10 +39144,6 @@
       {
         "Descripción": "Vehículo - Mercedes CLK",
         "Valor (euros)": 8000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -40166,10 +39757,6 @@
         "Valor (euros)": 42000.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
-      {
         "Descripción": "coche - Wolkswagen Tiguan",
         "Valor (euros)": null
       },
@@ -40486,13 +40073,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "MÁLAGA",
     "saldo_bancario": 20422.0,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 19443.0,
     "total_acciones": 52533.0,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 302197.0,
-    "total_activos": 72955.0,
-    "patrimonio_neto": -229242.0,
+    "total_activos": 92398.0,
+    "patrimonio_neto": -209799.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "JUNTA DE ANDALUCÍA",
@@ -40517,7 +40104,8 @@
       },
       {
         "Clave": "Málaga (50,00 %) - Cártama inmueble rústico ( herencia 50% ) Málaga (50,00 %) - Cártama parcela rústica ( herencia 50 % )",
-        "Tipo": "14.933,00 € 4.510,00 €"
+        "Tipo": "14.933,00 € 4.510,00 €",
+        "Valor catastral (euros)": 19443.0
       }
     ],
     "acciones_valores": [
@@ -40639,13 +40227,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "MÁLAGA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 7133.1,
     "total_acciones": 33955.25,
     "total_vehiculos": 14000.0,
     "total_seguros": null,
     "total_deudas": 314258.0,
-    "total_activos": 47955.25,
-    "patrimonio_neto": -266302.75,
+    "total_activos": 55088.35,
+    "patrimonio_neto": -259169.65,
     "cargos_publicos": [
       {
         "Entidad u organismo": "PARLAMENTO DE ANDALUCIA",
@@ -40663,7 +40251,8 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "7.133,10 €"
+        "Clave": null,
+        "Valor catastral (euros)": 7133.1
       }
     ],
     "acciones_valores": [
@@ -40978,10 +40567,6 @@
       {
         "Descripción": "PRESTAMO PERSONAL",
         "Valor (euros)": 13890.97
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "creditos_deudas": []
@@ -41592,9 +41177,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [
@@ -41903,9 +41485,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [
@@ -42516,17 +42095,7 @@
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -42631,9 +42200,6 @@
         "Tipo": "V",
         "Situación": "Málaga (50,00 %)",
         "Valor catastral (euros)": 117342.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -42883,10 +42449,6 @@
     ],
     "seguros_vida": [],
     "creditos_deudas": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      },
       {
         "Descripción": "AUTOMOVIL - PEUGEOT 308SW",
         "Valor (euros)": null
@@ -43444,10 +43006,6 @@
       {
         "Descripción": "0",
         "Valor (euros)": 0.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -44811,8 +44369,7 @@
         "Fecha de nombramiento": "17/06/2023"
       },
       {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja",
-        "Cargo desempeñado": "APELLIDOS, NOMBRE: CAMPOS MARFIL, GREGORIO ANTONIO CIRCUNSCRIPCIÓN: MÁLAGA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA"
+        "Entidad u organismo": "APELLIDOS, NOMBRE: CAMPOS MARFIL, GREGORIO ANTONIO CIRCUNSCRIPCIÓN: MÁLAGA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA"
       }
     ],
     "actividades_publicas": [],
@@ -44923,13 +44480,13 @@
     "partido": "PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA",
     "circunscripcion": "MÁLAGA",
     "saldo_bancario": 8000.0,
-    "valor_inmuebles": 130087.88,
+    "valor_inmuebles": 141036.88,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 138087.88,
-    "patrimonio_neto": 138087.88,
+    "total_activos": 149036.88,
+    "patrimonio_neto": 149036.88,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE MIJAS",
@@ -44959,7 +44516,8 @@
         "Valor catastral (euros)": 9217.4
       },
       {
-        "Clave": "10.949,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 10949.0
       }
     ],
     "acciones_valores": [],
@@ -45533,8 +45091,7 @@
         "Fecha de inicio": "01/09/2010"
       },
       {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja",
-        "Actividad desempeñada": "Entidad u organismo PARLAMENTO ANDALUCÍA"
+        "Entidad, organismo, empresa o sociedad": "Entidad u organismo PARLAMENTO ANDALUCÍA"
       }
     ],
     "actividades_privadas": [],
@@ -45897,17 +45454,7 @@
       }
     ],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -46035,12 +45582,11 @@
         "Empresa en la que se trabaja/Autónomo": ""
       },
       {
-        "Actividad": "https://www.juntadeandalucia.es/eboja",
-        "Empresa en la que se trabaja/Autónomo": "Entidad u organismo AYUNTAMIENTO DE CASTILLEJA DE LA CUESTA"
+        "Actividad": "Entidad u organismo AYUNTAMIENTO DE CASTILLEJA DE LA CUESTA",
+        "Empresa en la que se trabaja/Autónomo": "TÉCNICA DE INSERCIÓN LABORAL"
       },
       {
-        "Actividad": "TÉCNICA DE INSERCIÓN LABORAL",
-        "Empresa en la que se trabaja/Autónomo": "ASOCIACIÓN NACIONAL DE ACOGIDA"
+        "Actividad": "ASOCIACIÓN NACIONAL DE ACOGIDA"
       }
     ],
     "bienes_inmuebles": [
@@ -46389,10 +45935,6 @@
       {
         "Descripción": "Toyota Corolla",
         "Valor (euros)": 20000.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -46577,10 +46119,6 @@
       {
         "Descripción": "CONTRATO PRÉSTAMO FINANACIACIÓN BINEES MUEBLS VOLKSWAGEN BANK (50,00 %)",
         "Valor (euros)": 46502.67
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -47044,9 +46582,6 @@
         "Entidad u organismo": "AYUNTAMIENTO DE LOS MOLARES",
         "Cargo desempeñado": "ALCALDE",
         "Fecha de nombramiento": "17/06/2023"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [
@@ -47322,11 +46857,11 @@
     ],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "PLAN GESTION FUTURO 2030",
         "Valor (euros)": 6395.82
       },
       {
-        "Entidad": null,
+        "Entidad": "BANCO POPULAR PENSIONES",
         "Valor (euros)": 100.6
       }
     ],
@@ -47338,10 +46873,6 @@
       {
         "Descripción": "MOTO - SUZUKI",
         "Valor (euros)": 13700.0
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       },
       {
         "Descripción": null,
@@ -47489,9 +47020,6 @@
         "Tipo": "V",
         "Situación": "Sevilla - VIVIENDA FAMILIAR - 1984",
         "Valor catastral (euros)": 150000.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -47616,9 +47144,6 @@
         "Entidad u organismo": "Ayuntamiento",
         "Cargo desempeñado": "Concejal",
         "Fecha de nombramiento": "17/06/2023"
-      },
-      {
-        "Entidad u organismo": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_publicas": [
@@ -47728,9 +47253,6 @@
         "Tipo": "V",
         "Situación": "Sevilla",
         "Valor catastral (euros)": 22643.0
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "acciones_valores": [],
@@ -48283,17 +47805,7 @@
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "",
-        "Tipo": "",
-        "Situación": "",
-        "Valor catastral (euros)": null
-      },
-      {
-        "Clave": "https://www.juntadeandalucia.es/eboja"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [
       {
@@ -49155,12 +48667,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "SEGURO DE VIDA MYBOX CAIXA",
@@ -49535,13 +49042,13 @@
     "partido": "VOX",
     "circunscripcion": "SEVILLA",
     "saldo_bancario": 30286.62,
-    "valor_inmuebles": 33735.88,
+    "valor_inmuebles": 167162.35,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 64022.5,
-    "patrimonio_neto": 64022.5,
+    "total_activos": 197448.97,
+    "patrimonio_neto": 197448.97,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -49558,15 +49065,11 @@
         "Valor catastral (euros)": 33735.88
       },
       {
-        "Clave": "133.426,47 €"
+        "Clave": null,
+        "Valor catastral (euros)": 133426.47
       }
     ],
-    "acciones_valores": [
-      {
-        "Entidad": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
@@ -49941,9 +49444,6 @@
         "Entidad, organismo, empresa o sociedad": "DIPUTACIÓN PROVINCIAL DE SEVILLA",
         "Actividad desempeñada": "EVENTUAL - ASESOR",
         "Fecha de inicio": "01/08/2023"
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [
@@ -50053,13 +49553,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "SEVILLA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 43819.0,
     "total_acciones": null,
     "total_vehiculos": 20000.0,
     "total_seguros": null,
     "total_deudas": 78246.14,
-    "total_activos": 20000.0,
-    "patrimonio_neto": -58246.14,
+    "total_activos": 63819.0,
+    "patrimonio_neto": -14427.14,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -50070,7 +49570,8 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "43.819,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 43819.0
       }
     ],
     "acciones_valores": [],
@@ -50670,13 +50171,13 @@
     "partido": "POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL",
     "circunscripcion": "SEVILLA",
     "saldo_bancario": 93174.24,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 12615.12,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 1316.84,
-    "total_activos": 93174.24,
-    "patrimonio_neto": 91857.4,
+    "total_activos": 105789.36,
+    "patrimonio_neto": 104472.52,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -50687,15 +50188,11 @@
     ],
     "bienes_inmuebles": [
       {
-        "Clave": "12.615,12 €"
+        "Clave": null,
+        "Valor catastral (euros)": 12615.12
       }
     ],
-    "acciones_valores": [
-      {
-        "Entidad": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
-      }
-    ],
+    "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
@@ -50950,12 +50447,8 @@
         "Valor (euros)": 18000.0
       },
       {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": 131920.0
-      },
-      {
         "Descripción": "VEHICULO - SEAT LEON",
-        "Valor (euros)": null
+        "Valor (euros)": 131920.0
       }
     ],
     "seguros_vida": [],
@@ -51199,10 +50692,6 @@
       {
         "Descripción": "Hipoteca",
         "Valor (euros)": 47614.15
-      },
-      {
-        "Descripción": "Depósito Legal: SE-410/1979. ISSN: 2253-802X",
-        "Valor (euros)": null
       }
     ]
   },
@@ -51579,11 +51068,11 @@
     ],
     "acciones_valores": [
       {
-        "Entidad": null,
+        "Entidad": "Arteco Diseño y Construcción SL",
         "Valor (euros)": 750.0
       },
       {
-        "Entidad": null,
+        "Entidad": "INSCEFEN SL",
         "Valor (euros)": 1500.0
       }
     ],
@@ -51931,7 +51420,7 @@
         "Valor (euros)": null
       },
       {
-        "Entidad": null,
+        "Entidad": "NEXT GENERATION INTELIGENCIA ARTIFICIAL SL",
         "Valor (euros)": 30000.0
       }
     ],
@@ -52310,9 +51799,6 @@
         "Entidad, organismo, empresa o sociedad": "",
         "Actividad desempeñada": "",
         "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "actividades_privadas": [],
@@ -52811,9 +52297,6 @@
       {
         "Actividad": "",
         "Empresa en la que se trabaja/Autónomo": ""
-      },
-      {
-        "Actividad": "https://www.juntadeandalucia.es/eboja"
       }
     ],
     "bienes_inmuebles": [
@@ -53458,19 +52941,20 @@
     "partido": "PODER ANDALUZ",
     "circunscripcion": "SEVILLA",
     "saldo_bancario": null,
-    "valor_inmuebles": null,
+    "valor_inmuebles": 250.0,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": null,
-    "patrimonio_neto": null,
+    "total_activos": 250.0,
+    "patrimonio_neto": 250.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
-        "Clave": "250,00 €"
+        "Clave": null,
+        "Valor catastral (euros)": 250.0
       }
     ],
     "acciones_valores": [],
