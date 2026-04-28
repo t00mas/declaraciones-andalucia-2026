@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Declaraciones de Candidatos · Elecciones Andalucía 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f4f4f0;
+  --surface: #ffffff;
+  --border: #e0e0d8;
+  --text: #1a1a1a;
+  --muted: #666;
+  --accent: #c0392b;
+  --green: #27ae60;
+  --orange: #e67e22;
+  --header: #1a1a2e;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ─── HEADER ─── */
+header {
+  background: var(--header);
+  color: #fff;
+  padding: 16px 24px;
+}
+header h1 { font-size: 17px; font-weight: 700; }
+header p { font-size: 12px; color: rgba(255,255,255,.55); margin-top: 3px; }
+
+/* ─── STATS BAR ─── */
+.stats-bar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.stat { display: flex; flex-direction: column; }
+.stat-val { font-size: 22px; font-weight: 800; letter-spacing: -.5px; }
+.stat-val.red { color: var(--accent); }
+.stat-lbl { font-size: 11px; color: var(--muted); margin-top: 1px; }
+
+/* ─── TABS ─── */
+.tabs-nav {
+  background: var(--surface);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  padding: 0 24px;
+  gap: 0;
+  overflow-x: auto;
+}
+.tab-btn {
+  padding: 11px 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--muted);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  white-space: nowrap;
+  transition: color .15s;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+.tab-panel { display: none; padding: 20px 24px; }
+.tab-panel.active { display: block; }
+
+/* ─── CONTROLS ─── */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+input[type=text], select {
+  padding: 7px 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: #fff;
+  color: var(--text);
+}
+input[type=text] { flex: 1; min-width: 180px; }
+select { cursor: pointer; }
+
+/* ─── TABLE ─── */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 7px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+thead th {
+  background: #f0efe8;
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+thead th:hover { background: #e8e7e0; }
+thead th.asc::after { content: " ↑"; color: var(--accent); }
+thead th.desc::after { content: " ↓"; color: var(--accent); }
+tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #fafaf5; }
+td { padding: 6px 10px; }
+.pos { color: var(--green); font-weight: 600; }
+.neg { color: var(--accent); font-weight: 600; }
+.wrn { color: var(--orange); font-weight: 600; }
+.muted { color: var(--muted); }
+
+/* ─── PAGINATION ─── */
+.pager {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 10px 0 4px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.pager-btn {
+  min-width: 30px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+.pager-btn:hover { background: #f0efe8; }
+.pager-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pager-info { font-size: 12px; color: var(--muted); margin-right: auto; }
+
+/* ─── BADGE / FLAGS ─── */
+.badge {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px 9px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.flag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 1px 1px;
+}
+.flag.r { background: #fadbd8; color: #a93226; }
+.flag.o { background: #fdebd0; color: #ca6f1e; }
+.flag.b { background: #d6eaf8; color: #1f618d; }
+
+/* ─── CARD ─── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-head {
+  padding: 13px 16px;
+  background: #f8f7f0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.card-title { font-weight: 700; font-size: 14px; }
+.card-desc { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.card-body { padding: 14px 16px; overflow-x: auto; }
+.card-body-scroll { max-height: 380px; overflow-y: auto; }
+
+/* ─── ALERT GRID ─── */
+.alert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  gap: 18px;
+}
+
+/* ─── CHART CARD ─── */
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+.chart-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.chart-card p { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+
+/* ─── PARTY DOT ─── */
+.dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+/* ─── MODAL ─── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 200;
+  padding: 24px 16px;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+.overlay.open { display: flex; }
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 780px;
+  width: 100%;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0,0,0,.18);
+}
+.modal-hd {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+.modal-hd h2 { font-size: 17px; padding-right: 28px; }
+.modal-hd .sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.modal-close {
+  position: absolute; right: 14px; top: 14px;
+  border: none; background: none; font-size: 18px; cursor: pointer; color: var(--muted);
+  line-height: 1;
+}
+.modal-body { padding: 18px 20px; }
+.m-section { margin-bottom: 20px; }
+.m-section h3 {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .6px; color: var(--muted);
+  border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 10px;
+}
+.fin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.fin-box { background: #f8f7f0; border-radius: 6px; padding: 9px 11px; }
+.fin-box .fl { font-size: 11px; color: var(--muted); }
+.fin-box .fv { font-size: 16px; font-weight: 700; margin-top: 2px; }
+.flags-row { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px; }
+.mini-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mini-tbl th { background: #f0efe8; padding: 5px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+.mini-tbl td { padding: 4px 8px; border-bottom: 1px solid #f0efe8; vertical-align: top; }
+.mini-tbl tr:last-child td { border-bottom: none; }
+.empty { color: var(--muted); font-style: italic; font-size: 12px; }
+
+/* ─── MISC ─── */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+@media (max-width: 700px) {
+  .grid2 { grid-template-columns: 1fr; }
+  .alert-grid { grid-template-columns: 1fr; }
+  .tab-btn { padding: 10px 12px; font-size: 12px; }
+  .stats-bar { gap: 18px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Declaraciones de Candidatos · Elecciones al Parlamento de Andalucía 2026</h1>
+  <p>Fuente: BOJA núm. 79 C1, 27 de abril de 2026 · Actividades, bienes e intereses declarados ante la Mesa del Parlamento</p>
+</header>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-val" id="s-total">–</span><span class="stat-lbl">candidatos con declaración</span></div>
+  <div class="stat"><span class="stat-val red" id="s-neg">–</span><span class="stat-lbl">con patrimonio negativo</span></div>
+  <div class="stat"><span class="stat-val red" id="s-sin">–</span><span class="stat-lbl">sin ingresos · activos &gt;50k€</span></div>
+  <div class="stat"><span class="stat-val" id="s-max">–</span><span class="stat-lbl">mayor patrimonio declarado</span></div>
+  <div class="stat"><span class="stat-val red" id="s-min">–</span><span class="stat-lbl">patrimonio más negativo</span></div>
+</div>
+
+<nav class="tabs-nav">
+  <button class="tab-btn active" onclick="showTab(this,'buscar')">🔍 Candidatos</button>
+  <button class="tab-btn" onclick="showTab(this,'partido')">📊 Por partido</button>
+  <button class="tab-btn" onclick="showTab(this,'alertas')">⚠️ Señales de alerta</button>
+  <button class="tab-btn" onclick="showTab(this,'dist')">📈 Distribución</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════ TAB 1 -->
+<div class="tab-panel active" id="tab-buscar">
+  <div class="controls">
+    <input type="text" id="q" placeholder="Buscar nombre, apellidos, partido…" oninput="renderTable()">
+    <select id="f-partido" onchange="renderTable()"><option value="">Todos los partidos</option></select>
+    <select id="f-circ" onchange="renderTable()"><option value="">Todas las circunscripciones</option></select>
+  </div>
+  <div class="pager"><span class="pager-info" id="tbl-info"></span><span id="pager-top"></span></div>
+  <div class="tbl-wrap">
+    <table>
+      <thead id="main-thead">
+        <tr>
+          <th data-col="apellidos">Candidato</th>
+          <th data-col="partido">Partido</th>
+          <th data-col="circunscripcion">Circunscripción</th>
+          <th data-col="patrimonio_neto">Patrimonio neto</th>
+          <th data-col="total_activos">Activos</th>
+          <th data-col="total_deudas">Deudas</th>
+          <th data-col="saldo_bancario">Saldo</th>
+          <th data-col="valor_inmuebles">Inmuebles</th>
+          <th>Alertas</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="pager" style="padding-top:10px"><span id="pager-bot"></span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ TAB 2 -->
+<div class="tab-panel" id="tab-partido">
+  <div class="chart-card">
+    <h3>Patrimonio neto mediano por partido (€)</h3>
+    <p>Mediana de todos los candidatos con patrimonio declarado. La mediana es más representativa que la media cuando hay valores extremos.</p>
+    <div style="height:360px"><canvas id="ch-partido"></canvas></div>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Partido</th>
+          <th>Candidatos</th>
+          <th>Mediana patrimonio</th>
+          <th>Media patrimonio</th>
+          <th>% patr. negativo</th>
+          <th>% sin ingresos decl.</th>
+          <th>Mediana activos</th>
+          <th>Mediana deudas</th>
+        </tr>
+      </thead>
+      <tbody id="tb-partido"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ TAB 3 -->
+<div class="tab-panel" id="tab-alertas">
+  <div class="alert-grid" id="alert-grid"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ TAB 4 -->
+<div class="tab-panel" id="tab-dist">
+  <div class="chart-card">
+    <h3>Todos los candidatos, ordenados por patrimonio neto</h3>
+    <p>Cada punto es un candidato. Pasa el ratón para ver nombre y valor. Eje Y en escala logarítmica para que los valores bajos sean visibles.</p>
+    <div style="height:420px"><canvas id="ch-dist"></canvas></div>
+  </div>
+  <div class="chart-card">
+    <h3>Distribución por partido: mínimo · P25 · mediana · P75 · máximo</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Partido</th><th>Mínimo</th><th>P25</th><th>Mediana</th><th>P75</th><th>Máximo</th></tr></thead>
+      <tbody id="tb-dist"></tbody>
+    </table></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ MODAL -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-hd">
+      <h2 id="m-nombre"></h2>
+      <div class="sub" id="m-sub"></div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="m-body"></div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+// ─── DATA & STATE ────────────────────────────────────────────
+let ALL = [], FILTERED = [];
+let sortCol = 'patrimonio_neto', sortDir = -1;
+let page = 1;
+const PER_PAGE = 50;
+const IDX = {};  // nombre → candidate
+
+// ─── PARTY CONFIG ────────────────────────────────────────────
+const PSHORT = {
+  'PARTIDO POPULAR': 'PP',
+  'PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA': 'PSOE',
+  'VOX': 'VOX',
+  'ADELANTE ANDALUCÍA': 'Adelante',
+  'ANDALUCISTAS - PUEBLO ANDALUZ': 'Andalucistas',
+  'SE ACABÓ LA FIESTA': 'SALF',
+  'POR ANDALUCÍA: IZQUIERDA UNIDA ANDALUCÍA - PODEMOS - MOVIMIENTO SUMAR - INICIATIVA DEL': 'Por Andalucía',
+  'IZQUIERDA ANTICAPITALISTA REVOLUCIONARIA': 'IAR',
+  'CONECTA ANDALUCÍA': 'Conecta',
+  '100X100 UNIDOS': '100x100',
+};
+
+const PCOLOR = {
+  'PP': '#0066CC', 'PSOE': '#E4000F', 'VOX': '#63BE21',
+  'Adelante': '#8B0000', 'Andalucistas': '#009E60', 'SALF': '#F5A623',
+  'Por Andalucía': '#9B1889', 'IAR': '#E91E63',
+  'Conecta': '#00ACC1', '100x100': '#795548',
+};
+
+function ps(p) { return PSHORT[p] || (p.length > 22 ? p.slice(0,22)+'…' : p); }
+function pc(p) { return PCOLOR[ps(p)] || '#999'; }
+
+// ─── FORMATTING ──────────────────────────────────────────────
+function fmt(n, compact=true) {
+  if (n == null) return '–';
+  if (!compact) return n.toLocaleString('es-ES', {minimumFractionDigits:0, maximumFractionDigits:0}) + ' €';
+  const a = Math.abs(n), s = n < 0 ? '−' : '';
+  if (a >= 1e6) return s + (a/1e6).toLocaleString('es-ES',{minimumFractionDigits:1,maximumFractionDigits:2}) + 'M €';
+  if (a >= 1e3) return s + (a/1e3).toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0}) + 'k €';
+  return s + a.toLocaleString('es-ES',{minimumFractionDigits:0,maximumFractionDigits:0}) + ' €';
+}
+
+function cls(v) {
+  if (v == null) return 'muted';
+  if (v < 0) return 'neg';
+  if (v < 5000) return 'wrn';
+  return 'pos';
+}
+
+// ─── PERCENTILE ──────────────────────────────────────────────
+function pct(arr, p) {
+  const s = [...arr].sort((a,b)=>a-b);
+  const i = p/100*(s.length-1);
+  const lo = Math.floor(i), hi = Math.ceil(i);
+  return s[lo] + (s[hi]-s[lo])*(i-lo);
+}
+
+// ─── PREPROCESS ──────────────────────────────────────────────
+function prep(c) {
+  c._sp = ps(c.partido);
+  c._tiene = !!(c.cargos_publicos.length || c.actividades_publicas.length || c.actividades_privadas.length);
+  c._maxveh = c.vehiculos_otros.reduce((m,v)=>Math.max(m,v['Valor (euros)']||0),0);
+  c._ninm   = c.bienes_inmuebles.length;
+  c._cargo  = c.cargos_publicos.length > 0;
+
+  c._fNeg  = (c.patrimonio_neto ?? 0) < 0;
+  c._fSin  = !c._tiene && (c.total_activos ?? 0) > 50000;
+  c._fLujo = c._maxveh > 30000 && (c.saldo_bancario ?? 0) < 5000;
+  c._fInv  = c._cargo && (c.total_acciones ?? 0) > 50000;
+  c._fDeud = (c.total_deudas ?? 0) > 100000 && (c.valor_inmuebles ?? 0) < (c.total_deudas ?? 0) * 0.5;
+  c._fInm  = c._ninm >= 5;
+  c._nfl   = [c._fNeg,c._fSin,c._fLujo,c._fInv,c._fDeud,c._fInm].filter(Boolean).length;
+}
+
+// ─── TABS ────────────────────────────────────────────────────
+function showTab(btn, name) {
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+  if (name==='partido' && !window._cpBuilt) buildPartidoTab();
+  if (name==='dist'    && !window._cdBuilt) buildDistTab();
+}
+
+// ─── STATS BAR ───────────────────────────────────────────────
+function buildStats() {
+  const wp = ALL.filter(c=>c.patrimonio_neto!=null);
+  const maxC = wp.reduce((a,b)=>a.patrimonio_neto>b.patrimonio_neto?a:b);
+  const minC = wp.reduce((a,b)=>a.patrimonio_neto<b.patrimonio_neto?a:b);
+  document.getElementById('s-total').textContent = ALL.length.toLocaleString('es-ES');
+  document.getElementById('s-neg').textContent   = ALL.filter(c=>c._fNeg).length.toLocaleString('es-ES');
+  document.getElementById('s-sin').textContent   = ALL.filter(c=>c._fSin).length.toLocaleString('es-ES');
+  document.getElementById('s-max').textContent   = fmt(maxC.patrimonio_neto);
+  document.getElementById('s-min').textContent   = fmt(minC.patrimonio_neto);
+}
+
+// ─── CANDIDATE TABLE ─────────────────────────────────────────
+function applyFilters() {
+  const q = document.getElementById('q').value.toLowerCase().trim();
+  const fp = document.getElementById('f-partido').value;
+  const fc = document.getElementById('f-circ').value;
+
+  FILTERED = ALL.filter(c => {
+    if (fp && c.partido !== fp) return false;
+    if (fc && c.circunscripcion !== fc) return false;
+    if (q && !c.nombre.toLowerCase().includes(q) && !c.partido.toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  FILTERED.sort((a,b) => {
+    let av = a[sortCol], bv = b[sortCol];
+    if (typeof av === 'string') { av = av.toLowerCase(); bv = (bv||'').toLowerCase(); }
+    if (av == null) av = sortDir > 0 ? 1e15 : -1e15;
+    if (bv == null) bv = sortDir > 0 ? 1e15 : -1e15;
+    return av < bv ? -sortDir : av > bv ? sortDir : 0;
+  });
+}
+
+function renderTable() {
+  applyFilters();
+  page = 1;
+  renderPage();
+}
+
+function flagHtml(c) {
+  return [
+    c._fNeg  && '<span class="flag r">patr−</span>',
+    c._fSin  && '<span class="flag o">sin ingresos</span>',
+    c._fLujo && '<span class="flag o">veh. lujo</span>',
+    c._fInv  && '<span class="flag b">cargo+inv</span>',
+    c._fDeud && '<span class="flag r">deuda s/aval</span>',
+    c._fInm  && `<span class="flag b">${c._ninm} inm.</span>`,
+  ].filter(Boolean).join('');
+}
+
+function renderPage() {
+  const s = (page-1)*PER_PAGE;
+  const chunk = FILTERED.slice(s, s+PER_PAGE);
+
+  document.getElementById('tbody').innerHTML = chunk.map(c => {
+    const key = encodeURIComponent(c.nombre);
+    const fl = flagHtml(c);
+    return `<tr onclick="openModal('${key}')">
+      <td><strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}</td>
+      <td><span class="dot" style="background:${pc(c.partido)}"></span>${escH(c._sp)}</td>
+      <td>${escH(c.circunscripcion)}</td>
+      <td class="${cls(c.patrimonio_neto)}">${fmt(c.patrimonio_neto)}</td>
+      <td class="${cls(c.total_activos)}">${fmt(c.total_activos)}</td>
+      <td>${c.total_deudas ? `<span class="neg">${fmt(c.total_deudas)}</span>` : '–'}</td>
+      <td class="${cls(c.saldo_bancario)}">${fmt(c.saldo_bancario)}</td>
+      <td class="${cls(c.valor_inmuebles)}">${fmt(c.valor_inmuebles)}</td>
+      <td>${fl || '<span class="muted">–</span>'}</td>
+    </tr>`;
+  }).join('');
+
+  const total = Math.ceil(FILTERED.length / PER_PAGE);
+  const info = `${FILTERED.length.toLocaleString('es-ES')} candidatos`;
+  document.getElementById('tbl-info').textContent = info;
+  document.getElementById('pager-top').innerHTML = pagerHtml(total);
+  document.getElementById('pager-bot').innerHTML = pagerHtml(total);
+
+  // Sync sort indicators
+  document.querySelectorAll('#main-thead th').forEach(th => {
+    th.classList.remove('asc','desc');
+    if (th.dataset.col === sortCol) th.classList.add(sortDir===1?'asc':'desc');
+  });
+}
+
+function pagerHtml(total) {
+  if (total <= 1) return '';
+  let h = '';
+  if (page > 1) h += `<button class="pager-btn" onclick="goPage(${page-1})">‹</button>`;
+  for (let i=1; i<=total; i++) {
+    if (i===1 || i===total || Math.abs(i-page)<=2) {
+      h += `<button class="pager-btn${i===page?' on':''}" onclick="goPage(${i})">${i}</button>`;
+    } else if (Math.abs(i-page)===3) {
+      h += `<span style="padding:0 4px;color:#bbb">…</span>`;
+    }
+  }
+  if (page < total) h += `<button class="pager-btn" onclick="goPage(${page+1})">›</button>`;
+  return h;
+}
+
+function goPage(p) {
+  page = p;
+  renderPage();
+  document.getElementById('tab-buscar').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Wire up sortable headers
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#main-thead th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.col;
+      if (sortCol === col) sortDir *= -1;
+      else { sortCol = col; sortDir = -1; }
+      renderTable();
+    });
+  });
+});
+
+// ─── PARTY STATS ─────────────────────────────────────────────
+function partyStats() {
+  const groups = {};
+  ALL.forEach(c => {
+    if (!groups[c._sp]) groups[c._sp] = {sp:c._sp, full:c.partido, cs:[]};
+    groups[c._sp].cs.push(c);
+  });
+  return Object.values(groups).map(g => {
+    const pats   = g.cs.map(c=>c.patrimonio_neto).filter(v=>v!=null);
+    const activos= g.cs.map(c=>c.total_activos).filter(v=>v!=null);
+    const deudas = g.cs.map(c=>c.total_deudas).filter(v=>v!=null);
+    return {
+      sp: g.sp, full: g.full, n: g.cs.length,
+      med: pats.length ? pct(pats,50) : null,
+      mean: pats.length ? pats.reduce((a,b)=>a+b,0)/pats.length : null,
+      pNeg: g.cs.filter(c=>c._fNeg).length/g.cs.length*100,
+      pSin: g.cs.filter(c=>!c._tiene).length/g.cs.length*100,
+      medA: activos.length ? pct(activos,50) : null,
+      medD: deudas.length ? pct(deudas,50) : null,
+      pats,
+    };
+  }).sort((a,b)=>(b.med||0)-(a.med||0));
+}
+
+function buildPartidoTab() {
+  window._cpBuilt = true;
+  const stats = partyStats();
+  const ctx = document.getElementById('ch-partido').getContext('2d');
+  new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels: stats.map(s=>s.sp),
+      datasets:[{
+        data: stats.map(s=>s.med),
+        backgroundColor: stats.map(s=>pc(s.full)),
+        borderWidth:0,
+      }]
+    },
+    options:{
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{callbacks:{label:i=>fmt(i.raw,false)}} },
+      scales:{
+        x:{ ticks:{callback:v=>fmt(v), font:{size:11}} },
+        y:{ ticks:{font:{size:12}} }
+      }
+    }
+  });
+
+  document.getElementById('tb-partido').innerHTML = stats.map(s=>`
+    <tr>
+      <td><span class="dot" style="background:${pc(s.full)}"></span><strong>${escH(s.sp)}</strong></td>
+      <td>${s.n}</td>
+      <td class="${cls(s.med)}">${fmt(s.med)}</td>
+      <td class="${cls(s.mean)}">${fmt(s.mean)}</td>
+      <td>${s.pNeg.toFixed(1)}%</td>
+      <td>${s.pSin.toFixed(1)}%</td>
+      <td class="${cls(s.medA)}">${fmt(s.medA)}</td>
+      <td>${s.medD ? `<span class="neg">${fmt(s.medD)}</span>` : '–'}</td>
+    </tr>`).join('');
+}
+
+// ─── ALERT PANELS ────────────────────────────────────────────
+const ALERTS = [
+  {
+    emoji:'🔴', title:'Patrimonio negativo',
+    desc:'Las deudas declaradas superan el total de activos. Ordenado de mayor a menor déficit.',
+    flt: c=>c._fNeg,
+    srt: (a,b)=>(a.patrimonio_neto??0)-(b.patrimonio_neto??0),
+    cols:['Candidato','Partido','Activos','Deudas','Patrimonio neto'],
+    row: c=>[
+      `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+      dotParty(c),
+      fmt(c.total_activos),
+      `<span class="neg">${fmt(c.total_deudas)}</span>`,
+      `<span class="neg">${fmt(c.patrimonio_neto)}</span>`,
+    ],
+  },
+  {
+    emoji:'❓', title:'Sin actividad declarada · activos >50.000 €',
+    desc:'Ningún cargo público, empleo público ni privado consta en la declaración, pero disponen de activos significativos.',
+    flt: c=>c._fSin,
+    srt: (a,b)=>(b.total_activos??0)-(a.total_activos??0),
+    cols:['Candidato','Partido','Activos totales','Inmuebles','Acciones/fondos'],
+    row: c=>[
+      `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+      dotParty(c),
+      fmt(c.total_activos),
+      fmt(c.valor_inmuebles),
+      fmt(c.total_acciones),
+    ],
+  },
+  {
+    emoji:'🚗', title:'Vehículo >30.000 € · saldo bancario <5.000 €',
+    desc:'Posible desajuste entre estilo de vida declarado y liquidez disponible, o activos no declarados.',
+    flt: c=>c._fLujo,
+    srt: (a,b)=>b._maxveh-a._maxveh,
+    cols:['Candidato','Partido','Vehículo más caro','Saldo bancario'],
+    row: c=>[
+      `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+      dotParty(c),
+      `<span class="wrn">${fmt(c._maxveh)}</span>`,
+      `<span class="neg">${fmt(c.saldo_bancario)}</span>`,
+    ],
+  },
+  {
+    emoji:'⚖️', title:'Cargo público vigente · inversiones >50.000 €',
+    desc:'Candidatos con cargos (diputados, concejales, consejeros) y más de 50.000 € en acciones o fondos. Potencial conflicto de interés.',
+    flt: c=>c._fInv,
+    srt: (a,b)=>(b.total_acciones??0)-(a.total_acciones??0),
+    cols:['Candidato','Partido','Cargo','Acciones/fondos'],
+    row: c=>[
+      `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+      dotParty(c),
+      escH(c.cargos_publicos[0]?.['Cargo desempeñado'] || '–'),
+      `<span class="wrn">${fmt(c.total_acciones)}</span>`,
+    ],
+  },
+  {
+    emoji:'📉', title:'Deuda >100.000 € sin respaldo inmobiliario',
+    desc:'El valor catastral de los inmuebles declarados cubre menos del 50 % de la deuda total.',
+    flt: c=>c._fDeud,
+    srt: (a,b)=>(b.total_deudas??0)-(a.total_deudas??0),
+    cols:['Candidato','Partido','Deuda total','Inmuebles','Descubierto'],
+    row: c=>{
+      const gap=(c.total_deudas??0)-(c.valor_inmuebles??0);
+      return [
+        `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+        dotParty(c),
+        `<span class="neg">${fmt(c.total_deudas)}</span>`,
+        fmt(c.valor_inmuebles),
+        `<span class="neg">${fmt(gap)}</span>`,
+      ];
+    },
+  },
+  {
+    emoji:'🏠', title:'5 o más inmuebles declarados',
+    desc:'Grandes propietarios entre los candidatos. Relevante para el debate sobre la política de vivienda.',
+    flt: c=>c._fInm,
+    srt: (a,b)=>b._ninm-a._ninm || (b.valor_inmuebles??0)-(a.valor_inmuebles??0),
+    cols:['Candidato','Partido','N.º inmuebles','Valor catastral total'],
+    row: c=>[
+      `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
+      dotParty(c),
+      `<strong>${c._ninm}</strong>`,
+      fmt(c.valor_inmuebles),
+    ],
+  },
+];
+
+function dotParty(c) {
+  return `<span class="dot" style="background:${pc(c.partido)}"></span>${escH(c._sp)}`;
+}
+
+function buildAlerts() {
+  document.getElementById('alert-grid').innerHTML = ALERTS.map(a => {
+    const cs = ALL.filter(a.flt).sort(a.srt);
+    const rows = cs.slice(0,100).map(c => {
+      const cells = a.row(c);
+      return `<tr onclick="openModal('${encodeURIComponent(c.nombre)}')">${cells.map(x=>`<td>${x}</td>`).join('')}</tr>`;
+    }).join('');
+    return `
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="card-title">${a.emoji} ${a.title}</div>
+          <div class="card-desc">${a.desc}</div>
+        </div>
+        <span class="badge" style="flex-shrink:0">${cs.length}</span>
+      </div>
+      <div class="card-body card-body-scroll">
+        <table class="mini-tbl">
+          <thead><tr>${a.cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+        ${cs.length>100?`<p class="empty" style="padding:6px 0">Mostrando 100 de ${cs.length}</p>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── DISTRIBUTION CHART ──────────────────────────────────────
+function buildDistTab() {
+  window._cdBuilt = true;
+  const wp = ALL.filter(c=>c.patrimonio_neto!=null).sort((a,b)=>a.patrimonio_neto-b.patrimonio_neto);
+
+  const groups = {};
+  wp.forEach((c,i) => {
+    if (!groups[c._sp]) groups[c._sp] = {color:pc(c.partido), data:[]};
+    groups[c._sp].data.push({x:i+1, y:c.patrimonio_neto, nombre:c.nombre});
+  });
+
+  const datasets = Object.entries(groups).map(([label,g])=>({
+    label,
+    data: g.data,
+    backgroundColor: g.color+'CC',
+    pointRadius: 3,
+    pointHoverRadius: 5,
+  }));
+
+  const ctx = document.getElementById('ch-dist').getContext('2d');
+  window._cdBuilt = new Chart(ctx, {
+    type:'scatter',
+    data:{datasets},
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{position:'bottom', labels:{boxWidth:10, font:{size:11}}},
+        tooltip:{callbacks:{label:i=>`${i.raw.nombre}: ${fmt(i.raw.y,false)}`}}
+      },
+      scales:{
+        x:{title:{display:true,text:'Posición (rango, menor → mayor)'}},
+        y:{
+          title:{display:true,text:'Patrimonio neto declarado (€)'},
+          ticks:{callback:v=>fmt(v), font:{size:11}}
+        }
+      }
+    }
+  });
+
+  // Percentile table
+  const stats = partyStats();
+  document.getElementById('tb-dist').innerHTML = stats.map(s => {
+    if (!s.pats.length) return '';
+    const p = s.pats.sort((a,b)=>a-b);
+    return `<tr>
+      <td><span class="dot" style="background:${pc(s.full)}"></span><strong>${escH(s.sp)}</strong></td>
+      <td class="${cls(p[0])}">${fmt(p[0])}</td>
+      <td class="${cls(pct(p,25))}">${fmt(pct(p,25))}</td>
+      <td class="${cls(s.med)}">${fmt(s.med)}</td>
+      <td class="${cls(pct(p,75))}">${fmt(pct(p,75))}</td>
+      <td class="${cls(p[p.length-1])}">${fmt(p[p.length-1])}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ─── MODAL ───────────────────────────────────────────────────
+function openModal(key) {
+  const c = IDX[decodeURIComponent(key)];
+  if (!c) return;
+
+  document.getElementById('m-nombre').textContent = c.nombre;
+  document.getElementById('m-sub').innerHTML =
+    `<span class="dot" style="background:${pc(c.partido)}"></span>${escH(c.partido)} · ${escH(c.circunscripcion)}`;
+
+  const flags = [
+    c._fNeg  && {t:'Patrimonio negativo',cls:'r'},
+    c._fSin  && {t:'Sin ingresos declarados',cls:'o'},
+    c._fLujo && {t:'Vehículo lujo / saldo bajo',cls:'o'},
+    c._fInv  && {t:'Cargo público + grandes inversiones',cls:'b'},
+    c._fDeud && {t:'Deuda sin aval inmobiliario',cls:'r'},
+    c._fInm  && {t:`${c._ninm} inmuebles declarados`,cls:'b'},
+  ].filter(Boolean);
+
+  const finItems = [
+    ['Patrimonio neto',    c.patrimonio_neto],
+    ['Activos totales',    c.total_activos],
+    ['Deudas totales',     c.total_deudas],
+    ['Saldo bancario',     c.saldo_bancario],
+    ['Inmuebles (catastral)', c.valor_inmuebles],
+    ['Acciones y fondos',  c.total_acciones],
+    ['Vehículos / otros',  c.total_vehiculos],
+    ['Seguros de vida',    c.total_seguros],
+  ];
+
+  function mt(rows, cols) {
+    if (!rows || !rows.length) return '<p class="empty">No consta</p>';
+    return `<table class="mini-tbl">
+      <thead><tr>${cols.map(h=>`<th>${escH(h)}</th>`).join('')}</tr></thead>
+      <tbody>${rows.map(r=>`<tr>${cols.map(h=>{
+        const v=r[h];
+        return `<td>${v==null?'–':typeof v==='number'?fmt(v,false):escH(String(v))}</td>`;
+      }).join('')}</tr>`).join('')}</tbody>
+    </table>`;
+  }
+
+  document.getElementById('m-body').innerHTML = `
+    ${flags.length ? `<div class="flags-row">${flags.map(f=>`<span class="flag ${f.cls}">${f.t}</span>`).join('')}</div>` : ''}
+    <div class="fin-grid">
+      ${finItems.map(([l,v])=>`<div class="fin-box"><div class="fl">${l}</div><div class="fv ${cls(v)}">${fmt(v,false)}</div></div>`).join('')}
+    </div>
+    <div class="m-section"><h3>1.1 Cargos públicos</h3>
+      ${mt(c.cargos_publicos,['Entidad u organismo','Cargo desempeñado','Fecha de nombramiento'])}</div>
+    <div class="m-section"><h3>1.2 Actividades públicas</h3>
+      ${mt(c.actividades_publicas,['Entidad, organismo, empresa o sociedad','Actividad desempeñada','Fecha de inicio'])}</div>
+    <div class="m-section"><h3>1.3 Actividades privadas</h3>
+      ${mt(c.actividades_privadas,['Actividad','Empresa en la que se trabaja/Autónomo'])}</div>
+    <div class="m-section"><h3>2.1 Bienes inmuebles</h3>
+      ${mt(c.bienes_inmuebles,['Clave','Tipo','Situación','Valor catastral (euros)'])}</div>
+    <div class="m-section"><h3>2.3 Acciones y valores</h3>
+      ${mt(c.acciones_valores,['Entidad','Valor (euros)'])}</div>
+    <div class="m-section"><h3>2.4 Vehículos y otros bienes</h3>
+      ${mt(c.vehiculos_otros,['Descripción','Valor (euros)'])}</div>
+    <div class="m-section"><h3>2.5 Seguros de vida</h3>
+      ${mt(c.seguros_vida,['Descripción','Valor (euros)'])}</div>
+    <div class="m-section"><h3>2.6 Créditos y deudas</h3>
+      ${mt(c.creditos_deudas,['Descripción','Valor (euros)'])}</div>
+  `;
+
+  document.getElementById('overlay').classList.add('open');
+}
+
+function closeModal() { document.getElementById('overlay').classList.remove('open'); }
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
+
+// ─── UTILS ───────────────────────────────────────────────────
+function escH(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── INIT ────────────────────────────────────────────────────
+function populateSelects() {
+  const partidos = [...new Set(ALL.map(c=>c.partido))].sort();
+  const circs    = [...new Set(ALL.map(c=>c.circunscripcion))].sort();
+  const ps2 = document.getElementById('f-partido');
+  partidos.forEach(p => {
+    const o = document.createElement('option');
+    o.value = p; o.textContent = ps(p); ps2.appendChild(o);
+  });
+  const cs2 = document.getElementById('f-circ');
+  circs.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c; cs2.appendChild(o);
+  });
+}
+
+fetch('candidates.json')
+  .then(r => { if (!r.ok) throw new Error(r.statusText); return r.json(); })
+  .then(data => {
+    ALL = data;
+    ALL.forEach(c => { prep(c); IDX[c.nombre] = c; });
+    FILTERED = [...ALL];
+
+    buildStats();
+    populateSelects();
+    applyFilters();
+    renderPage();
+    buildAlerts();
+  })
+  .catch(err => {
+    document.querySelector('.stats-bar').innerHTML =
+      `<p style="color:var(--accent);padding:8px">Error cargando datos: ${err.message}. Sirve el archivo con un servidor HTTP (p.ej. <code>python3 -m http.server</code>).</p>`;
+  });
+</script>
+</body>
+</html>
