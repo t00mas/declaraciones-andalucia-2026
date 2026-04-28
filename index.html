@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Declaraciones de Candidatos · Elecciones Andalucía 2026</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.4/build/index.umd.min.js"></script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -276,6 +277,40 @@ td { padding: 6px 10px; }
 .mini-tbl tr:last-child td { border-bottom: none; }
 .empty { color: var(--muted); font-style: italic; font-size: 12px; }
 
+/* ─── STICKY FIRST COL ─── */
+.tbl-wrap table thead th:first-child,
+.tbl-wrap table tbody td:first-child {
+  position: sticky; left: 0; z-index: 1;
+  background: inherit;
+}
+.tbl-wrap table thead th:first-child { background: #f0efe8; }
+.tbl-wrap table tbody tr:hover td:first-child { background: #fafaf5; }
+
+/* ─── ALERT FILTER BAR ─── */
+.alert-filter-bar {
+  display: flex; align-items: center; gap: 10px;
+  background: #fef9e7; border: 1px solid #f9ca24;
+  border-radius: 6px; padding: 8px 12px; margin-bottom: 12px;
+  font-size: 13px;
+}
+.clear-btn {
+  padding: 3px 10px; border: 1px solid var(--border); border-radius: 4px;
+  background: #fff; cursor: pointer; font-size: 12px;
+}
+.clear-btn:hover { background: #f0efe8; }
+
+/* ─── VER TODOS BTN ─── */
+.ver-todos {
+  display: block; width: 100%; padding: 7px;
+  background: #f8f7f0; border: none; border-top: 1px solid var(--border);
+  font-size: 12px; cursor: pointer; color: var(--accent); font-weight: 600;
+  text-align: center;
+}
+.ver-todos:hover { background: #f0efe8; }
+
+/* ─── TOP 10 TABLE ─── */
+.rank-num { font-weight: 800; color: var(--muted); font-size: 15px; }
+
 /* ─── MISC ─── */
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
 @media (max-width: 700px) {
@@ -283,6 +318,7 @@ td { padding: 6px 10px; }
   .alert-grid { grid-template-columns: 1fr; }
   .tab-btn { padding: 10px 12px; font-size: 12px; }
   .stats-bar { gap: 18px; }
+  .card-body-scroll { max-height: 220px; }
 }
 </style>
 </head>
@@ -296,16 +332,21 @@ td { padding: 6px 10px; }
 <div class="stats-bar">
   <div class="stat"><span class="stat-val" id="s-total">–</span><span class="stat-lbl">candidatos con declaración</span></div>
   <div class="stat"><span class="stat-val red" id="s-neg">–</span><span class="stat-lbl">con patrimonio negativo</span></div>
-  <div class="stat"><span class="stat-val red" id="s-sin">–</span><span class="stat-lbl">sin ingresos · activos &gt;50k€</span></div>
+  <div class="stat"><span class="stat-val red" id="s-sin">–</span><span class="stat-lbl">sin empleador · activos &gt;50k€</span></div>
   <div class="stat"><span class="stat-val" id="s-max">–</span><span class="stat-lbl">mayor patrimonio declarado</span></div>
   <div class="stat"><span class="stat-val red" id="s-min">–</span><span class="stat-lbl">patrimonio más negativo</span></div>
+  <div class="stat" style="margin-left:auto">
+    <button onclick="showTab(document.querySelector('.tab-btn[data-tab=alertas]'))" style="background:var(--accent);color:#fff;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;font-size:13px;font-weight:600">
+      ⚠️ Ver señales de alerta →
+    </button>
+  </div>
 </div>
 
 <nav class="tabs-nav">
-  <button class="tab-btn active" onclick="showTab(this,'buscar')">🔍 Candidatos</button>
-  <button class="tab-btn" onclick="showTab(this,'partido')">📊 Por partido</button>
-  <button class="tab-btn" onclick="showTab(this,'alertas')">⚠️ Señales de alerta</button>
-  <button class="tab-btn" onclick="showTab(this,'dist')">📈 Distribución</button>
+  <button class="tab-btn active" data-tab="buscar" onclick="showTab(this)">🔍 Candidatos</button>
+  <button class="tab-btn" data-tab="partido" onclick="showTab(this)">📊 Por partido</button>
+  <button class="tab-btn" data-tab="alertas" onclick="showTab(this)">⚠️ Señales de alerta</button>
+  <button class="tab-btn" data-tab="dist" onclick="showTab(this)">📈 Distribución</button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════ TAB 1 -->
@@ -315,6 +356,10 @@ td { padding: 6px 10px; }
     <select id="f-partido" onchange="renderTable()"><option value="">Todos los partidos</option></select>
     <select id="f-circ" onchange="renderTable()"><option value="">Todas las circunscripciones</option></select>
   </div>
+  <div class="alert-filter-bar" id="alert-filter-bar" style="display:none">
+    ⚠️ Filtrando por alerta: <strong id="alert-filter-name"></strong>
+    <button class="clear-btn" onclick="clearAlertFilter()">✕ Quitar filtro</button>
+  </div>
   <div class="pager"><span class="pager-info" id="tbl-info"></span><span id="pager-top"></span></div>
   <div class="tbl-wrap">
     <table>
@@ -323,12 +368,12 @@ td { padding: 6px 10px; }
           <th data-col="apellidos">Candidato</th>
           <th data-col="partido">Partido</th>
           <th data-col="circunscripcion">Circunscripción</th>
+          <th>Alertas</th>
           <th data-col="patrimonio_neto">Patrimonio neto</th>
           <th data-col="total_activos">Activos</th>
           <th data-col="total_deudas">Deudas</th>
           <th data-col="saldo_bancario">Saldo</th>
           <th data-col="valor_inmuebles">Inmuebles</th>
-          <th>Alertas</th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -371,15 +416,23 @@ td { padding: 6px 10px; }
 <!-- ═══════════════════════════════════════════════════ TAB 4 -->
 <div class="tab-panel" id="tab-dist">
   <div class="chart-card">
-    <h3>Todos los candidatos, ordenados por patrimonio neto</h3>
-    <p>Cada punto es un candidato. Pasa el ratón para ver nombre y valor. Eje Y en escala logarítmica para que los valores bajos sean visibles.</p>
-    <div style="height:420px"><canvas id="ch-dist"></canvas></div>
+    <h3>Distribución del patrimonio neto por partido</h3>
+    <p>Caja = P25–P75. Línea central = mediana. Bigotes = mín/máx. Cada punto fuera de la caja es un outlier.</p>
+    <div style="height:400px"><canvas id="ch-dist"></canvas></div>
   </div>
   <div class="chart-card">
     <h3>Distribución por partido: mínimo · P25 · mediana · P75 · máximo</h3>
     <div class="tbl-wrap"><table>
       <thead><tr><th>Partido</th><th>Mínimo</th><th>P25</th><th>Mediana</th><th>P75</th><th>Máximo</th></tr></thead>
       <tbody id="tb-dist"></tbody>
+    </table></div>
+  </div>
+  <div class="chart-card">
+    <h3>Top 10 patrimonios más altos declarados</h3>
+    <p>Los candidatos con mayor patrimonio neto del censo. Ninguno escapa al análisis por estar dentro de alertas.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>#</th><th>Candidato</th><th>Partido</th><th>Patrimonio neto</th><th>Nota</th></tr></thead>
+      <tbody id="tb-top10"></tbody>
     </table></div>
   </div>
 </div>
@@ -405,6 +458,7 @@ let sortCol = 'patrimonio_neto', sortDir = -1;
 let page = 1;
 const PER_PAGE = 50;
 const IDX = {};  // nombre → candidate
+let alertFilter = null;  // {key: '_fNeg', label: '...'} or null
 
 // ─── PARTY CONFIG ────────────────────────────────────────────
 const PSHORT = {
@@ -473,13 +527,34 @@ function prep(c) {
 }
 
 // ─── TABS ────────────────────────────────────────────────────
-function showTab(btn, name) {
+function showTab(btn) {
+  const name = btn.dataset.tab;
   document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   btn.classList.add('active');
   if (name==='partido' && !window._cpBuilt) buildPartidoTab();
   if (name==='dist'    && !window._cdBuilt) buildDistTab();
+}
+
+function switchToTab(name) {
+  const btn = document.querySelector(`.tab-btn[data-tab="${name}"]`);
+  if (btn) showTab(btn);
+}
+
+function filterToAlert(flagKey, label) {
+  alertFilter = {key: flagKey, label};
+  document.getElementById('alert-filter-bar').style.display = 'flex';
+  document.getElementById('alert-filter-name').textContent = label;
+  switchToTab('buscar');
+  renderTable();
+  document.getElementById('tab-buscar').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function clearAlertFilter() {
+  alertFilter = null;
+  document.getElementById('alert-filter-bar').style.display = 'none';
+  renderTable();
 }
 
 // ─── STATS BAR ───────────────────────────────────────────────
@@ -504,6 +579,7 @@ function applyFilters() {
     if (fp && c.partido !== fp) return false;
     if (fc && c.circunscripcion !== fc) return false;
     if (q && !c.nombre.toLowerCase().includes(q) && !c.partido.toLowerCase().includes(q)) return false;
+    if (alertFilter && !c[alertFilter.key]) return false;
     return true;
   });
 
@@ -544,12 +620,12 @@ function renderPage() {
       <td><strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}</td>
       <td><span class="dot" style="background:${pc(c.partido)}"></span>${escH(c._sp)}</td>
       <td>${escH(c.circunscripcion)}</td>
+      <td>${fl || '<span class="muted">–</span>'}</td>
       <td class="${cls(c.patrimonio_neto)}">${fmt(c.patrimonio_neto)}</td>
       <td class="${cls(c.total_activos)}">${fmt(c.total_activos)}</td>
       <td>${c.total_deudas ? `<span class="neg">${fmt(c.total_deudas)}</span>` : '–'}</td>
       <td class="${cls(c.saldo_bancario)}">${fmt(c.saldo_bancario)}</td>
       <td class="${cls(c.valor_inmuebles)}">${fmt(c.valor_inmuebles)}</td>
-      <td>${fl || '<span class="muted">–</span>'}</td>
     </tr>`;
   }).join('');
 
@@ -663,7 +739,7 @@ function buildPartidoTab() {
 // ─── ALERT PANELS ────────────────────────────────────────────
 const ALERTS = [
   {
-    emoji:'🔴', title:'Patrimonio negativo',
+    emoji:'🔴', title:'Patrimonio negativo', flagKey:'_fNeg',
     desc:'Las deudas declaradas superan el total de activos. Ordenado de mayor a menor déficit.',
     flt: c=>c._fNeg,
     srt: (a,b)=>(a.patrimonio_neto??0)-(b.patrimonio_neto??0),
@@ -677,8 +753,8 @@ const ALERTS = [
     ],
   },
   {
-    emoji:'❓', title:'Sin actividad declarada · activos >50.000 €',
-    desc:'Ningún cargo público, empleo público ni privado consta en la declaración, pero disponen de activos significativos.',
+    emoji:'❓', title:'Sin empleador declarado · activos >50.000 €', flagKey:'_fSin',
+    desc:'Ningún cargo público, empleo público ni privado consta en la declaración, pero disponen de activos significativos. Puede incluir jubilados, rentistas o declaraciones incompletas.',
     flt: c=>c._fSin,
     srt: (a,b)=>(b.total_activos??0)-(a.total_activos??0),
     cols:['Candidato','Partido','Activos totales','Inmuebles','Acciones/fondos'],
@@ -691,8 +767,8 @@ const ALERTS = [
     ],
   },
   {
-    emoji:'🚗', title:'Vehículo >30.000 € · saldo bancario <5.000 €',
-    desc:'Posible desajuste entre estilo de vida declarado y liquidez disponible, o activos no declarados.',
+    emoji:'🚗', title:'Vehículo >30.000 € · saldo bancario <5.000 €', flagKey:'_fLujo',
+    desc:'Posible desajuste entre estilo de vida declarado y liquidez disponible.',
     flt: c=>c._fLujo,
     srt: (a,b)=>b._maxveh-a._maxveh,
     cols:['Candidato','Partido','Vehículo más caro','Saldo bancario'],
@@ -704,20 +780,21 @@ const ALERTS = [
     ],
   },
   {
-    emoji:'⚖️', title:'Cargo público vigente · inversiones >50.000 €',
+    emoji:'⚖️', title:'Cargo público vigente · inversiones >50.000 €', flagKey:'_fInv',
     desc:'Candidatos con cargos (diputados, concejales, consejeros) y más de 50.000 € en acciones o fondos. Potencial conflicto de interés.',
     flt: c=>c._fInv,
     srt: (a,b)=>(b.total_acciones??0)-(a.total_acciones??0),
-    cols:['Candidato','Partido','Cargo','Acciones/fondos'],
+    cols:['Candidato','Partido','Cargo','Organismo','Acciones/fondos'],
     row: c=>[
       `<strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}`,
       dotParty(c),
       escH(c.cargos_publicos[0]?.['Cargo desempeñado'] || '–'),
+      escH(c.cargos_publicos[0]?.['Entidad u organismo'] || '–'),
       `<span class="wrn">${fmt(c.total_acciones)}</span>`,
     ],
   },
   {
-    emoji:'📉', title:'Deuda >100.000 € sin respaldo inmobiliario',
+    emoji:'📉', title:'Deuda >100.000 € sin respaldo inmobiliario', flagKey:'_fDeud',
     desc:'El valor catastral de los inmuebles declarados cubre menos del 50 % de la deuda total.',
     flt: c=>c._fDeud,
     srt: (a,b)=>(b.total_deudas??0)-(a.total_deudas??0),
@@ -734,8 +811,8 @@ const ALERTS = [
     },
   },
   {
-    emoji:'🏠', title:'5 o más inmuebles declarados',
-    desc:'Grandes propietarios entre los candidatos. Relevante para el debate sobre la política de vivienda.',
+    emoji:'🏠', title:'5 o más inmuebles declarados', flagKey:'_fInm',
+    desc:'Grandes propietarios entre los candidatos.',
     flt: c=>c._fInm,
     srt: (a,b)=>b._ninm-a._ninm || (b.valor_inmuebles??0)-(a.valor_inmuebles??0),
     cols:['Candidato','Partido','N.º inmuebles','Valor catastral total'],
@@ -775,6 +852,7 @@ function buildAlerts() {
         </table>
         ${cs.length>100?`<p class="empty" style="padding:6px 0">Mostrando 100 de ${cs.length}</p>`:''}
       </div>
+      <button class="ver-todos" onclick="filterToAlert('${a.flagKey}','${a.title}')">Ver todos en tabla →</button>
     </div>`;
   }).join('');
 }
@@ -782,47 +860,58 @@ function buildAlerts() {
 // ─── DISTRIBUTION CHART ──────────────────────────────────────
 function buildDistTab() {
   window._cdBuilt = true;
-  const wp = ALL.filter(c=>c.patrimonio_neto!=null).sort((a,b)=>a.patrimonio_neto-b.patrimonio_neto);
+  const stats = partyStats().filter(s=>s.pats.length);
 
-  const groups = {};
-  wp.forEach((c,i) => {
-    if (!groups[c._sp]) groups[c._sp] = {color:pc(c.partido), data:[]};
-    groups[c._sp].data.push({x:i+1, y:c.patrimonio_neto, nombre:c.nombre});
-  });
-
-  const datasets = Object.entries(groups).map(([label,g])=>({
-    label,
-    data: g.data,
-    backgroundColor: g.color+'CC',
-    pointRadius: 3,
-    pointHoverRadius: 5,
+  const datasets = stats.map(s => ({
+    label: s.sp,
+    data: [s.pats],
+    backgroundColor: pc(s.full) + '55',
+    borderColor: pc(s.full),
+    borderWidth: 1,
+    outlierBackgroundColor: pc(s.full) + '99',
+    outlierRadius: 3,
   }));
 
   const ctx = document.getElementById('ch-dist').getContext('2d');
-  window._cdBuilt = new Chart(ctx, {
-    type:'scatter',
-    data:{datasets},
-    options:{
-      responsive:true, maintainAspectRatio:false,
-      plugins:{
-        legend:{position:'bottom', labels:{boxWidth:10, font:{size:11}}},
-        tooltip:{callbacks:{label:i=>`${i.raw.nombre}: ${fmt(i.raw.y,false)}`}}
+  new Chart(ctx, {
+    type: 'boxplot',
+    data: { labels: stats.map(s=>s.sp), datasets: [{
+      label: 'Patrimonio neto',
+      data: stats.map(s=>s.pats),
+      backgroundColor: stats.map(s=>pc(s.full)+'55'),
+      borderColor: stats.map(s=>pc(s.full)),
+      borderWidth: 1,
+      outlierBackgroundColor: stats.map(s=>pc(s.full)+'bb'),
+      outlierRadius: 3,
+    }]},
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: {display: false},
+        tooltip: {callbacks: {label: i => {
+          const d = i.dataset.data[i.dataIndex];
+          if (!d) return '';
+          const sorted = [...d].sort((a,b)=>a-b);
+          return [
+            `Mín: ${fmt(sorted[0])}`,
+            `P25: ${fmt(pct(sorted,25))}`,
+            `Mediana: ${fmt(pct(sorted,50))}`,
+            `P75: ${fmt(pct(sorted,75))}`,
+            `Máx: ${fmt(sorted[sorted.length-1])}`,
+          ];
+        }}}
       },
-      scales:{
-        x:{title:{display:true,text:'Posición (rango, menor → mayor)'}},
-        y:{
-          title:{display:true,text:'Patrimonio neto declarado (€)'},
-          ticks:{callback:v=>fmt(v), font:{size:11}}
-        }
+      scales: {
+        x: {ticks: {callback: v=>fmt(v), font:{size:11}}},
+        y: {ticks: {font:{size:12}}}
       }
     }
   });
 
   // Percentile table
-  const stats = partyStats();
   document.getElementById('tb-dist').innerHTML = stats.map(s => {
-    if (!s.pats.length) return '';
-    const p = s.pats.sort((a,b)=>a-b);
+    const p = [...s.pats].sort((a,b)=>a-b);
     return `<tr>
       <td><span class="dot" style="background:${pc(s.full)}"></span><strong>${escH(s.sp)}</strong></td>
       <td class="${cls(p[0])}">${fmt(p[0])}</td>
@@ -832,6 +921,18 @@ function buildDistTab() {
       <td class="${cls(p[p.length-1])}">${fmt(p[p.length-1])}</td>
     </tr>`;
   }).join('');
+
+  // Top 10
+  const top10 = ALL.filter(c=>c.patrimonio_neto!=null)
+    .sort((a,b)=>b.patrimonio_neto-a.patrimonio_neto).slice(0,10);
+  document.getElementById('tb-top10').innerHTML = top10.map((c,i) => `
+    <tr onclick="openModal('${encodeURIComponent(c.nombre)}')" style="cursor:pointer">
+      <td class="rank-num">${i+1}</td>
+      <td><strong>${escH(c.apellidos)}</strong>, ${escH(c.nombre_pila)}</td>
+      <td>${dotParty(c)}</td>
+      <td class="pos">${fmt(c.patrimonio_neto)}</td>
+      <td class="muted" style="font-size:11px">${escH(c.circunscripcion)}</td>
+    </tr>`).join('');
 }
 
 // ─── MODAL ───────────────────────────────────────────────────
