@@ -3780,7 +3780,7 @@
     "apellidos": "Van Der Heide García",
     "nombre_pila": "María Del Rocío",
     "partido": "ADELANTE ANDALUCÍA",
-    "circunscripcion": "ALMERÍA",
+    "circunscripcion": "",
     "saldo_bancario": 3500.0,
     "valor_inmuebles": 85478.73,
     "total_acciones": null,
@@ -3790,11 +3790,7 @@
     "total_activos": 88978.73,
     "patrimonio_neto": 63978.73,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: VAN DER HEIDE GARCÍA, MARÍA DEL ROCÍO PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ADELANTE ANDALUCÍA"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
@@ -3936,9 +3932,9 @@
     "total_acciones": 110.5,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": null,
+    "total_deudas": 78639.86,
     "total_activos": 92964.04,
-    "patrimonio_neto": 92964.04,
+    "patrimonio_neto": 14324.18,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -3964,7 +3960,12 @@
     ],
     "vehiculos_otros": [],
     "seguros_vida": [],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "HIPOTECA (50,00 %)",
+        "Valor (euros)": 78639.86
+      }
+    ]
   },
   {
     "nombre": "ÚBEDA ANDUJAR, FRANCISCO",
@@ -4032,6 +4033,29 @@
         "Valor (euros)": 2500.0
       }
     ],
+    "seguros_vida": [],
+    "creditos_deudas": []
+  },
+  {
+    "nombre": "GARCÍA RODRÍGUEZ, LEONARDO JESÚS",
+    "apellidos": "García Rodríguez",
+    "nombre_pila": "Leonardo Jesús",
+    "partido": "SE ACABÓ LA FIESTA",
+    "circunscripcion": "",
+    "saldo_bancario": null,
+    "valor_inmuebles": null,
+    "total_acciones": null,
+    "total_vehiculos": null,
+    "total_seguros": null,
+    "total_deudas": null,
+    "total_activos": null,
+    "patrimonio_neto": null,
+    "cargos_publicos": [],
+    "actividades_publicas": [],
+    "actividades_privadas": [],
+    "bienes_inmuebles": [],
+    "acciones_valores": [],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -4912,9 +4936,9 @@
     "total_acciones": null,
     "total_vehiculos": 17000.0,
     "total_seguros": 121314.0,
-    "total_deudas": null,
+    "total_deudas": 121314.0,
     "total_activos": 163235.0,
-    "patrimonio_neto": 163235.0,
+    "patrimonio_neto": 41921.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Huércal-Overa",
@@ -4954,7 +4978,12 @@
         "Valor (euros)": 121314.0
       }
     ],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "Hipoteca ING",
+        "Valor (euros)": 121314.0
+      }
+    ]
   },
   {
     "nombre": "MARTÍNEZ IGLESIAS, IVÁN",
@@ -6270,21 +6299,7 @@
     "total_activos": 900.0,
     "patrimonio_neto": 900.0,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "",
-        "Actividad desempeñada": "",
-        "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: PÉREZ GONZÁLEZ, SUSANA CIRCUNSCRIPCIÓN: ALMERÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
-        "Actividad desempeñada": "Ayuntamiento de Coria del Río",
-        "Fecha de inicio": "Asesora de Gabinete"
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "01/11/2023"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
@@ -6843,11 +6858,7 @@
     "total_activos": 23000.0,
     "patrimonio_neto": 23000.0,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: VÁZQUEZ ESCOBAR, FRANCISCO CIRCUNSCRIPCIÓN: ALMERÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: IZQUIERDA ANTICAPITALISTA REVOLUCIONARIA"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [
       {
         "Actividad": "PROFESOR",
@@ -7955,9 +7966,9 @@
     "total_acciones": null,
     "total_vehiculos": 13900.0,
     "total_seguros": 87276.28,
-    "total_deudas": null,
+    "total_deudas": 115481.28,
     "total_activos": 134830.94,
-    "patrimonio_neto": 134830.94,
+    "patrimonio_neto": 19349.66,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Barbate",
@@ -7994,7 +8005,16 @@
         "Valor (euros)": 87276.28
       }
     ],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "Hipoteca",
+        "Valor (euros)": 85481.28
+      },
+      {
+        "Descripción": "Préstamo Personal",
+        "Valor (euros)": 30000.0
+      }
+    ]
   },
   {
     "nombre": "CLA REDONDO, CONCEPCIÓN",
@@ -8171,21 +8191,7 @@
     "total_activos": 105963.0,
     "patrimonio_neto": 32809.23,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "",
-        "Actividad desempeñada": "",
-        "Fecha de inicio": ""
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: AYUSO MARENTE, JOSÉ ANTONIO CIRCUNSCRIPCIÓN: CÁDIZ PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ",
-        "Actividad desempeñada": "Consejería de Desarrollo Educativo",
-        "Fecha de inicio": "Maestro de Pedagogía Terapéutica"
-      },
-      {
-        "Entidad, organismo, empresa o sociedad": "01/01/1990"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
@@ -8974,7 +8980,7 @@
     "apellidos": "Rico Fernández",
     "nombre_pila": "Celia María",
     "partido": "100X100 UNIDOS",
-    "circunscripcion": "CÁDIZ",
+    "circunscripcion": "",
     "saldo_bancario": null,
     "valor_inmuebles": 290000.0,
     "total_acciones": null,
@@ -10553,7 +10559,7 @@
     "apellidos": "Pintor Alonso",
     "nombre_pila": "María Pilar",
     "partido": "PARTIDO POPULAR",
-    "circunscripcion": "CÁDIZ",
+    "circunscripcion": "",
     "saldo_bancario": 43834.0,
     "valor_inmuebles": 284000.0,
     "total_acciones": null,
@@ -10562,21 +10568,7 @@
     "total_deudas": 199020.0,
     "total_activos": 345834.0,
     "patrimonio_neto": 146814.0,
-    "cargos_publicos": [
-      {
-        "Entidad u organismo": "",
-        "Cargo desempeñado": "",
-        "Fecha de nombramiento": ""
-      },
-      {
-        "Entidad u organismo": "APELLIDOS, NOMBRE: PINTOR ALONSO, MARÍA PILAR PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
-        "Cargo desempeñado": "AYUNTAMIENTO DE ALGECIRAS",
-        "Fecha de nombramiento": "CONCEJAL"
-      },
-      {
-        "Entidad u organismo": "17/06/2023"
-      }
-    ],
+    "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
@@ -12173,9 +12165,9 @@
     "total_acciones": 50145.65,
     "total_vehiculos": 38500.0,
     "total_seguros": null,
-    "total_deudas": null,
+    "total_deudas": 90301.0,
     "total_activos": 596996.46,
-    "patrimonio_neto": 596996.46,
+    "patrimonio_neto": 506695.46,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE CHIPIONA",
@@ -12269,7 +12261,16 @@
       }
     ],
     "seguros_vida": [],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "PRESTAMO HIPOTECARIO",
+        "Valor (euros)": 87925.0
+      },
+      {
+        "Descripción": "PRESTAMO PERSONAL",
+        "Valor (euros)": 2376.0
+      }
+    ]
   },
   {
     "nombre": "GUITART MARTÍNEZ, ELENA",
@@ -15133,7 +15134,7 @@
     "apellidos": "Bazán Benítez",
     "nombre_pila": "Javier Carlos",
     "partido": "VOX",
-    "circunscripcion": "CÓRDOBA",
+    "circunscripcion": "",
     "saldo_bancario": 35000.0,
     "valor_inmuebles": 129152.06,
     "total_acciones": 45332.46,
@@ -15143,11 +15144,7 @@
     "total_activos": 209484.52,
     "patrimonio_neto": -45515.48,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: BAZÁN BENÍTEZ, JAVIER CARLOS PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: VOX"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
@@ -15273,7 +15270,7 @@
     "apellidos": "Rodríguez Pérez",
     "nombre_pila": "Ana María",
     "partido": "VOX",
-    "circunscripcion": "CÓRDOBA",
+    "circunscripcion": "",
     "saldo_bancario": null,
     "valor_inmuebles": 370643.45,
     "total_acciones": null,
@@ -16070,11 +16067,7 @@
     "total_activos": 1000.0,
     "patrimonio_neto": 1000.0,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: AGUAYO JIMÉNEZ, JOSÉ CIRCUNSCRIPCIÓN: CÓRDOBA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [
       {
         "Actividad": "Al-Yussana Alojamientos S.L.",
@@ -16889,7 +16882,7 @@
     "apellidos": "Pozo Romero",
     "nombre_pila": "Tatiana",
     "partido": "PARTIDO POPULAR",
-    "circunscripcion": "CÓRDOBA",
+    "circunscripcion": "",
     "saldo_bancario": 2500.0,
     "valor_inmuebles": 92617.26,
     "total_acciones": 1520.09,
@@ -16898,26 +16891,7 @@
     "total_deudas": 85065.56,
     "total_activos": 118117.35,
     "patrimonio_neto": 33051.79,
-    "cargos_publicos": [
-      {
-        "Entidad u organismo": "",
-        "Cargo desempeñado": "",
-        "Fecha de nombramiento": ""
-      },
-      {
-        "Entidad u organismo": "APELLIDOS, NOMBRE: POZO ROMERO, TATIANA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR",
-        "Cargo desempeñado": "AYUNTAMIENTO PUENTE GENIL",
-        "Fecha de nombramiento": "2 TTE ALCALDE"
-      },
-      {
-        "Entidad u organismo": "17/06/2023",
-        "Cargo desempeñado": "EXCMA DIPUTACIÓN DE CÓRDOBA",
-        "Fecha de nombramiento": "DIPUTADA PROVINCIAL"
-      },
-      {
-        "Entidad u organismo": "19/06/2023"
-      }
-    ],
+    "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
@@ -17893,16 +17867,31 @@
       {
         "Descripción": "HIPOTECA",
         "Valor (euros)": 25000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
       }
     ]
+  },
+  {
+    "nombre": "LINARES GONZÁLEZ, RAUL",
+    "apellidos": "Linares González",
+    "nombre_pila": "Raul",
+    "partido": "SE ACABÓ LA FIESTA",
+    "circunscripcion": "",
+    "saldo_bancario": null,
+    "valor_inmuebles": null,
+    "total_acciones": null,
+    "total_vehiculos": null,
+    "total_seguros": null,
+    "total_deudas": null,
+    "total_activos": null,
+    "patrimonio_neto": null,
+    "cargos_publicos": [],
+    "actividades_publicas": [],
+    "actividades_privadas": [],
+    "bienes_inmuebles": [],
+    "acciones_valores": [],
+    "vehiculos_otros": [],
+    "seguros_vida": [],
+    "creditos_deudas": []
   },
   {
     "nombre": "TORRES LÓPEZ, JUANA",
@@ -17996,7 +17985,7 @@
     "apellidos": "Moyano García",
     "nombre_pila": "Mireya",
     "partido": "SE ACABÓ LA FIESTA",
-    "circunscripcion": "CÓRDOBA",
+    "circunscripcion": "",
     "saldo_bancario": null,
     "valor_inmuebles": null,
     "total_acciones": null,
@@ -18007,15 +17996,7 @@
     "patrimonio_neto": null,
     "cargos_publicos": [],
     "actividades_publicas": [],
-    "actividades_privadas": [
-      {
-        "Actividad": "APELLIDOS, NOMBRE: MOYANO GARCÍA, MIREYA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: SE ACABÓ LA FIESTA"
-      },
-      {
-        "Actividad": "TRABAJADOR POR CUENTA AJENA",
-        "Empresa en la que se trabaja/Autónomo": "TRABAJADOR POR CUENTA AJENA"
-      }
-    ],
+    "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
@@ -20238,7 +20219,7 @@
     "apellidos": "Fernandez Medina",
     "nombre_pila": "Juan Jesus",
     "partido": "ADELANTE ANDALUCÍA",
-    "circunscripcion": "GRANADA",
+    "circunscripcion": "",
     "saldo_bancario": 1581.6,
     "valor_inmuebles": 34995.77,
     "total_acciones": null,
@@ -20966,9 +20947,9 @@
     "total_acciones": null,
     "total_vehiculos": 23000.0,
     "total_seguros": null,
-    "total_deudas": null,
+    "total_deudas": 10000.0,
     "total_activos": 33000.0,
-    "patrimonio_neto": 33000.0,
+    "patrimonio_neto": 23000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE ARMILLA",
@@ -20992,7 +20973,12 @@
       }
     ],
     "seguros_vida": [],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "PRÉSTAMO PERSONAL",
+        "Valor (euros)": 10000.0
+      }
+    ]
   },
   {
     "nombre": "ALARCÓN CAMÚS, OTILIA",
@@ -24302,7 +24288,7 @@
     "apellidos": "Cabello García",
     "nombre_pila": "José Miguel",
     "partido": "SE ACABÓ LA FIESTA",
-    "circunscripcion": "GRANADA",
+    "circunscripcion": "",
     "saldo_bancario": 0.0,
     "valor_inmuebles": null,
     "total_acciones": null,
@@ -27123,7 +27109,7 @@
     "apellidos": "Martín Jiménez",
     "nombre_pila": "Estefanía",
     "partido": "PARTIDO POPULAR",
-    "circunscripcion": "HUELVA",
+    "circunscripcion": "",
     "saldo_bancario": 1100.0,
     "valor_inmuebles": 3914.02,
     "total_acciones": null,
@@ -29821,11 +29807,7 @@
     "total_activos": 70167.0,
     "patrimonio_neto": 70167.0,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: RODRÍGUEZ MORA, MARÍA ROCÍO CIRCUNSCRIPCIÓN: HUELVA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
@@ -30033,11 +30015,7 @@
     "patrimonio_neto": 1789.29,
     "cargos_publicos": [],
     "actividades_publicas": [],
-    "actividades_privadas": [
-      {
-        "Actividad": "APELLIDOS, NOMBRE: LUNA FERNÁNDEZ, PABLO CIRCUNSCRIPCIÓN: HUELVA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ANDALUCISTAS - PUEBLO ANDALUZ"
-      }
-    ],
+    "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
     "vehiculos_otros": [],
@@ -30947,7 +30925,7 @@
     "apellidos": "Fernández Montavez",
     "nombre_pila": "Maríana",
     "partido": "ADELANTE ANDALUCÍA",
-    "circunscripcion": "JAÉN",
+    "circunscripcion": "",
     "saldo_bancario": 700.0,
     "valor_inmuebles": null,
     "total_acciones": null,
@@ -30957,11 +30935,7 @@
     "total_activos": 700.0,
     "patrimonio_neto": -800.0,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: FERNÁNDEZ MONTAVEZ, MARÍANA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: ADELANTE ANDALUCÍA"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
@@ -32437,7 +32411,7 @@
     "apellidos": "Ortega Aguila",
     "nombre_pila": "Jesús Juan",
     "partido": "VOX",
-    "circunscripcion": "JAÉN",
+    "circunscripcion": "",
     "saldo_bancario": 9000.0,
     "valor_inmuebles": 33000.0,
     "total_acciones": null,
@@ -33596,7 +33570,7 @@
     "apellidos": "Lopez Salido",
     "nombre_pila": "José Francisco",
     "partido": "PARTIDO POPULAR",
-    "circunscripcion": "JAÉN",
+    "circunscripcion": "",
     "saldo_bancario": 82700.0,
     "valor_inmuebles": 45689.69,
     "total_acciones": null,
@@ -34830,9 +34804,9 @@
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": 100000.0,
-    "total_deudas": null,
+    "total_deudas": 80997.29,
     "total_activos": 49626.32,
-    "patrimonio_neto": 49626.32,
+    "patrimonio_neto": -31370.97,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Jódar",
@@ -34858,7 +34832,12 @@
         "Valor (euros)": 100000.0
       }
     ],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "Préstamo hipotecario vivienda en Caja Ruralvia",
+        "Valor (euros)": 80997.29
+      }
+    ]
   },
   {
     "nombre": "LÓPEZ RUANO, FRANCISCO JOSÉ",
@@ -40704,7 +40683,7 @@
     "apellidos": "Caetano Toledo",
     "nombre_pila": "Dolores",
     "partido": "PARTIDO POPULAR",
-    "circunscripcion": "MÁLAGA",
+    "circunscripcion": "",
     "saldo_bancario": 175785.14,
     "valor_inmuebles": 38589.0,
     "total_acciones": null,
@@ -40714,11 +40693,7 @@
     "total_activos": 226374.14,
     "patrimonio_neto": 226374.14,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: CAETANO TOLEDO, DOLORES PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO POPULAR"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
       {
@@ -42355,7 +42330,7 @@
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": null,
+    "total_deudas": 0.0,
     "total_activos": null,
     "patrimonio_neto": null,
     "cargos_publicos": [],
@@ -42365,7 +42340,12 @@
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "0",
+        "Valor (euros)": 0.0
+      }
+    ]
   },
   {
     "nombre": "SÁNCHEZ GUITARD LÓPEZ VALERA, ARACELI",
@@ -42652,7 +42632,7 @@
     "apellidos": "Fernández Fuentes",
     "nombre_pila": "Beatriz",
     "partido": "CONECTA ANDALUCÍA",
-    "circunscripcion": "MÁLAGA",
+    "circunscripcion": "",
     "saldo_bancario": null,
     "valor_inmuebles": null,
     "total_acciones": null,
@@ -43342,7 +43322,7 @@
     "apellidos": "Durán Guerra",
     "nombre_pila": "Jaime María",
     "partido": "SE ACABÓ LA FIESTA",
-    "circunscripcion": "MÁLAGA",
+    "circunscripcion": "",
     "saldo_bancario": null,
     "valor_inmuebles": null,
     "total_acciones": 2050.0,
@@ -43353,15 +43333,7 @@
     "patrimonio_neto": 5390.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
-    "actividades_privadas": [
-      {
-        "Actividad": "APELLIDOS, NOMBRE: DURÁN GUERRA, JAIME MARÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: SE ACABÓ LA FIESTA"
-      },
-      {
-        "Actividad": "JEFE DE SECTOR",
-        "Empresa en la que se trabaja/Autónomo": "HOTEL HIGUERÓN"
-      }
-    ],
+    "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [
       {
@@ -44112,16 +44084,7 @@
     "total_deudas": null,
     "total_activos": 144429.33,
     "patrimonio_neto": 144429.33,
-    "cargos_publicos": [
-      {
-        "Entidad u organismo": "AYUNTAMIENTO DE IZNATE",
-        "Cargo desempeñado": "ALCALDE-PRESIDENTE",
-        "Fecha de nombramiento": "17/06/2023"
-      },
-      {
-        "Entidad u organismo": "APELLIDOS, NOMBRE: CAMPOS MARFIL, GREGORIO ANTONIO CIRCUNSCRIPCIÓN: MÁLAGA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: PARTIDO SOCIALISTA OBRERO ESPAÑOL DE ANDALUCÍA"
-      }
-    ],
+    "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
       {
@@ -48645,7 +48608,7 @@
     "apellidos": "González Alorda Iriarte",
     "nombre_pila": "María Mercedes",
     "partido": "VOX",
-    "circunscripcion": "SEVILLA",
+    "circunscripcion": "",
     "saldo_bancario": 23777.0,
     "valor_inmuebles": 31657.6,
     "total_acciones": null,
@@ -49051,7 +49014,7 @@
     "apellidos": "Madera Freixas",
     "nombre_pila": "Isabel",
     "partido": "VOX",
-    "circunscripcion": "SEVILLA",
+    "circunscripcion": "",
     "saldo_bancario": 26400.0,
     "valor_inmuebles": 168634.0,
     "total_acciones": null,
@@ -51374,7 +51337,7 @@
     "apellidos": "Reina Ruiz",
     "nombre_pila": "Laura María",
     "partido": "SE ACABÓ LA FIESTA",
-    "circunscripcion": "SEVILLA",
+    "circunscripcion": "",
     "saldo_bancario": 15.9,
     "valor_inmuebles": null,
     "total_acciones": null,
@@ -51384,11 +51347,7 @@
     "total_activos": 15.9,
     "patrimonio_neto": -484.1,
     "cargos_publicos": [],
-    "actividades_publicas": [
-      {
-        "Entidad, organismo, empresa o sociedad": "APELLIDOS, NOMBRE: REINA RUIZ, LAURA MARÍA PARTIDO, FEDERACIÓN, COALICIÓN o AGRUPACIÓN: SE ACABÓ LA FIESTA"
-      }
-    ],
+    "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
@@ -52538,9 +52497,9 @@
     "total_acciones": 15000.0,
     "total_vehiculos": null,
     "total_seguros": 149769.0,
-    "total_deudas": null,
+    "total_deudas": 192009.0,
     "total_activos": 327849.0,
-    "patrimonio_neto": 327849.0,
+    "patrimonio_neto": 135840.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -52594,7 +52553,16 @@
         "Valor (euros)": 149769.0
       }
     ],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "Hipoteca (50,00 %)",
+        "Valor (euros)": 149769.0
+      },
+      {
+        "Descripción": "Préstamo personal",
+        "Valor (euros)": 42240.0
+      }
+    ]
   },
   {
     "nombre": "MORENO JIMÉNEZ, FÁTIMA SOLEDAD",

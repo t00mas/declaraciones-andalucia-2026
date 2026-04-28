@@ -416,6 +416,12 @@ def main():
 
     blocks = re.split(r"\*{5,}", text)
     blocks = [b.strip() for b in blocks if "APELLIDOS, NOMBRE:" in b]
+    # Some blocks are missing the ***** separator — split at extra APELLIDOS occurrences.
+    split_blocks = []
+    for b in blocks:
+        parts = re.split(r"(?=APELLIDOS, NOMBRE:)", b)
+        split_blocks.extend(p.strip() for p in parts if "APELLIDOS, NOMBRE:" in p)
+    blocks = split_blocks
     print(f"  {len(blocks)} candidate blocks")
 
     candidates, errors = [], 0
