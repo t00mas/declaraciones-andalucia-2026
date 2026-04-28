@@ -347,6 +347,7 @@ td { padding: 6px 10px; }
   <button class="tab-btn" data-tab="partido" onclick="showTab(this)">📊 Por partido</button>
   <button class="tab-btn" data-tab="alertas" onclick="showTab(this)">⚠️ Señales de alerta</button>
   <button class="tab-btn" data-tab="dist" onclick="showTab(this)">📈 Distribución</button>
+  <button class="tab-btn" data-tab="info" onclick="showTab(this)">ℹ️ Marco legal</button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════ TAB 1 -->
@@ -434,6 +435,53 @@ td { padding: 6px 10px; }
       <thead><tr><th>#</th><th>Candidato</th><th>Partido</th><th>Patrimonio neto</th><th>Nota</th></tr></thead>
       <tbody id="tb-top10"></tbody>
     </table></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ TAB 5 -->
+<div class="tab-panel" id="tab-info">
+  <div class="chart-card" style="max-width:780px">
+    <h3>¿Por qué existe esta declaración?</h3>
+    <p>El <strong>artículo 24.5 de la Ley Electoral de Andalucía</strong> (<a href="https://www.boe.es/buscar/act.php?id=BOE-A-1986-2788" target="_blank" rel="noopener">Ley 1/1986, de 2 de enero</a>, modificada por <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2005-7989" target="_blank" rel="noopener">Ley 5/2005, de 8 de abril</a>) obliga a todos los candidatos proclamados a presentar ante la Mesa del Parlamento de Andalucía, antes del día 31 posterior a la convocatoria, una declaración sobre actividades, bienes e intereses.</p>
+    <p style="margin-top:10px">La declaración se publica en el Boletín Oficial del Parlamento de Andalucía y en el BOJA, y debe estar disponible en internet antes del día 35. Esta exigencia se aplica a <strong>todos los candidatos de todas las listas</strong>, no solo a los que resulten elegidos.</p>
+    <p style="margin-top:10px;font-size:12px;color:var(--muted)">Andalucía fue pionera en España al extender esta obligación a candidatos (y no solo a diputados electos). La mayoría de comunidades autónomas solo requieren declaraciones una vez tomada posesión del cargo.</p>
+  </div>
+
+  <div class="chart-card" style="max-width:780px">
+    <h3>¿Qué pasa si se miente u omite información?</h3>
+    <p>La Ley Electoral no establece sanción propia por falsedad. Las consecuencias proceden de otros marcos:</p>
+    <div class="tbl-wrap" style="margin-top:14px">
+      <table>
+        <thead><tr><th>Infracción</th><th>Marco legal</th><th>Sanción teórica</th><th>Quién actúa</th></tr></thead>
+        <tbody>
+          <tr><td>Falsedad en documento público/oficial</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444" target="_blank" rel="noopener">Código Penal arts. 390–392</a></td><td>6 meses–3 años prisión + multa (particular); 3–6 años (funcionario)</td><td>Juzgados ordinarios (denuncia previa)</td></tr>
+          <tr><td>Omisión o falsedad en declaración de alto cargo</td><td><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-7987" target="_blank" rel="noopener">Ley 3/2005 de Incompatibilidades (Andalucía), art. 15</a></td><td>Cese + inhabilitación 3–10 años + restitución</td><td>Parlamento / Oficina Antifraude (solo si ya es alto cargo)</td></tr>
+          <tr><td>Infracción electoral genérica</td><td>Ley 1/1986, art. 13.d</td><td>Multa hasta ~900 €</td><td>Junta Electoral</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="chart-card" style="max-width:780px;border-left:4px solid var(--accent)">
+    <h3>En la práctica: aplicación casi nula</h3>
+    <p>Según investigación de El Español (2018), <strong>la Administración no ha sancionado nunca a ningún parlamentario o alto cargo por mentir en su declaración</strong>, a pesar de que dos de cada tres declaraciones contienen errores u omisiones.</p>
+    <ul style="margin-top:10px;padding-left:20px;line-height:1.8">
+      <li>No existe órgano que verifique activamente el contenido declarado.</li>
+      <li>No hay cruce sistemático con Hacienda, Catastro ni Registro de la Propiedad.</li>
+      <li>Las declaraciones de candidatos se cancelan automáticamente al constituirse el nuevo Parlamento.</li>
+      <li>Para que haya consecuencia penal, alguien debe denunciar específicamente.</li>
+    </ul>
+  </div>
+
+  <div class="chart-card" style="max-width:780px">
+    <h3>Fuentes y legislación</h3>
+    <ul style="padding-left:20px;line-height:2">
+      <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1986-2788" target="_blank" rel="noopener">Ley 1/1986, de 2 de enero, Electoral de Andalucía (BOE)</a></li>
+      <li><a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2005-7989" target="_blank" rel="noopener">Ley 5/2005, de 8 de abril — añade el art. 24.5 (BOE)</a></li>
+      <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-7987" target="_blank" rel="noopener">Ley 3/2005, de 8 de abril, de Incompatibilidades de Altos Cargos de Andalucía (BOE)</a></li>
+      <li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444" target="_blank" rel="noopener">Ley Orgánica 10/1995, del Código Penal — arts. 390–392 (BOE)</a></li>
+      <li><a href="https://www.juntadeandalucia.es/eboja/2026/79/c01/BOJA26-207901-00201-5604-01_00336841.pdf" target="_blank" rel="noopener">BOJA núm. 79 C1, 27 de abril de 2026 — Resolución del Presidente del Parlamento</a></li>
+    </ul>
   </div>
 </div>
 
