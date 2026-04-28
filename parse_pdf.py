@@ -276,6 +276,44 @@ def parse_candidate(block):
                 for r, entity in zip(null_acc, entity_lines[:len(null_acc)]):
                     r["Entidad"] = entity
 
+    # When pdftotext displaces section 2.4/2.5/2.6 content into the 2.3 text range,
+    # parse_colmajor produces null-Entidad rows (because "Descripción" != "Entidad").
+    # Detect via "Descripción" header in 2.3 text, re-parse using 2.4 column format,
+    # then classify: deudas → creditos_deudas, seguros → seguros_vida, rest → vehiculos_otros.
+    sec23_text = sec("2.3")
+    # seguro check before deuda: "SEGURO VIDA HIPOTECARIO" must match seguro, not hipoteca
+    _seg_kw = re.compile(r"(?i)(segur|póliza)")
+    _deu_kw = re.compile(r"(?i)(hipoteca|préstamo|prestamo|crédito|credito|financiaci|pago\s+hip)")
+    if (any(r.get("Entidad") is None for r in acciones)
+            and re.search(r"(?m)^Descripción\s*$", sec23_text)):
+        displaced_rows = parse_table("2.4", sec23_text)
+        for row in displaced_rows:
+            desc = str(row.get("Descripción") or "").strip()
+            val = row.get("Valor (euros)")
+            if val is None:
+                continue
+            if _seg_kw.search(desc):
+                seguros.append(row)
+            elif _deu_kw.search(desc):
+                deudas.append(row)
+            else:
+                vehiculos.append(row)
+        acciones = [r for r in acciones if r.get("Entidad") is not None or r.get("Valor (euros)") is None]
+
+    # Also re-route deuda/seguro items that pdftotext displaced into the 2.4 (vehiculos) area.
+    veh_clean, veh_displaced = [], []
+    for row in vehiculos:
+        desc = str(row.get("Descripción") or "").strip()
+        if _seg_kw.search(desc):
+            veh_displaced.append(row)
+            seguros.append(row)
+        elif _deu_kw.search(desc):
+            veh_displaced.append(row)
+            deudas.append(row)
+        else:
+            veh_clean.append(row)
+    vehiculos = veh_clean
+
     saldo_text = sec("2.2")
     saldo_m = re.search(r"[\d.,]+\s*€", saldo_text)
     saldo = parse_money(saldo_m.group(0)) if saldo_m else None
