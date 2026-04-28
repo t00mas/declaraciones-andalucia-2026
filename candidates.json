@@ -39847,13 +39847,14 @@
       {
         "Clave": "N",
         "Tipo": "R",
-        "Situación": "P",
-        "Valor catastral (euros)": null
+        "Situación": "Málaga (50,00 %) - Cártama inmueble rústico (herencia 50 %)",
+        "Valor catastral (euros)": 14933.0
       },
       {
-        "Clave": "Málaga (50,00 %) - Cártama inmueble rústico ( herencia 50% ) Málaga (50,00 %) - Cártama parcela rústica ( herencia 50 % )",
-        "Tipo": "14.933,00 € 4.510,00 €",
-        "Valor catastral (euros)": 19443.0
+        "Clave": "N",
+        "Tipo": "R",
+        "Situación": "Málaga (50,00 %) - Cártama parcela rústica (herencia 50 %)",
+        "Valor catastral (euros)": 4510.0
       }
     ],
     "acciones_valores": [

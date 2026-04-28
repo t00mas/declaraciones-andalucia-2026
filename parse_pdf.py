@@ -393,6 +393,17 @@ def parse_candidate(block):
     }
 
 
+# Manually corrected bienes_inmuebles for candidates where pdftotext layout
+# is too garbled to fix programmatically. Keyed by nombre (APELLIDOS, NOMBRE).
+# Only bienes_inmuebles is overridden; aggregates are recalculated automatically.
+BIENES_OVERRIDES = {
+    "MORENO BONILLA, JUAN MANUEL": [
+        {"Clave": "N", "Tipo": "R", "Situación": "Málaga (50,00 %) - Cártama inmueble rústico (herencia 50 %)", "Valor catastral (euros)": 14933.0},
+        {"Clave": "N", "Tipo": "R", "Situación": "Málaga (50,00 %) - Cártama parcela rústica (herencia 50 %)", "Valor catastral (euros)": 4510.0},
+    ],
+}
+
+
 def main():
     print("Extracting text from PDF...")
     text = extract_text()
@@ -411,6 +422,15 @@ def main():
     for block in blocks:
         c = parse_candidate(block)
         if c:
+            if c["nombre"] in BIENES_OVERRIDES:
+                rows = BIENES_OVERRIDES[c["nombre"]]
+                c["bienes_inmuebles"] = rows
+                c["valor_inmuebles"] = sum(r["Valor catastral (euros)"] for r in rows if r.get("Valor catastral (euros)"))
+                activos = sum(filter(None, [c["valor_inmuebles"], c["saldo_bancario"],
+                                            c["total_acciones"], c["total_vehiculos"], c["total_seguros"]]))
+                c["total_activos"] = round(activos, 2) if activos else None
+                deudas = c["total_deudas"] or 0
+                c["patrimonio_neto"] = round(activos - deudas, 2) if activos else None
             candidates.append(c)
         else:
             errors += 1
