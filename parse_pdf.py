@@ -253,6 +253,20 @@ def parse_candidate(block):
                     r["Clave"] = None
                 break
 
+    # When two properties are merged into one row, the second value ends up in Situación.
+    # Detect: Situación contains money AND its value differs from the already-set Valor
+    # (if equal, Situación WAS the valor source and there's no extra row to add).
+    extra_bienes = []
+    for r in bienes:
+        sit = str(r.get("Situación") or "")
+        if _money_pat.match(sit):
+            sit_val = parse_money(sit)
+            existing = r.get("Valor catastral (euros)")
+            if sit_val is not None and existing is not None and abs(sit_val - existing) > 0.01:
+                extra_bienes.append({"Clave": None, "Tipo": None, "Situación": None,
+                                     "Valor catastral (euros)": sit_val})
+    bienes = bienes + extra_bienes
+
     # Filter phantom bienes rows: cross-section leaks and fully-empty ghost rows.
     _phantom_clave = re.compile(
         r"^(?:Actividad|Entidad[ ,]|DEPÓSITOS Y OTROS VALORES|VALORES MOBILIARIOS)",

@@ -14998,13 +14998,13 @@
     "partido": "VOX",
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 68919.13,
-    "valor_inmuebles": 614251.96,
+    "valor_inmuebles": 677184.07,
     "total_acciones": 88805.22,
     "total_vehiculos": 90300.0,
     "total_seguros": 92813.69,
     "total_deudas": 95770.39,
-    "total_activos": 862276.31,
-    "patrimonio_neto": 766505.92,
+    "total_activos": 925208.42,
+    "patrimonio_neto": 829438.03,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -15067,6 +15067,12 @@
         "Tipo": "Córdoba (50,00 %) - propiedad pro indiviso con otro titular - 2002 Córdoba - Propiedad - 2003",
         "Situación": "62.932,11 €",
         "Valor catastral (euros)": 146702.17
+      },
+      {
+        "Clave": null,
+        "Tipo": null,
+        "Situación": null,
+        "Valor catastral (euros)": 62932.11
       }
     ],
     "acciones_valores": [
@@ -21404,13 +21410,13 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 52795.13,
-    "valor_inmuebles": 88581.49,
+    "valor_inmuebles": 94614.52,
     "total_acciones": 20512.88,
     "total_vehiculos": null,
     "total_seguros": 82038.0,
     "total_deudas": 6627.25,
-    "total_activos": 161889.5,
-    "patrimonio_neto": 155262.25,
+    "total_activos": 167922.53,
+    "patrimonio_neto": 161295.28,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -21432,6 +21438,12 @@
         "Tipo": "3.940,66 €",
         "Situación": "6.033,03 €",
         "Valor catastral (euros)": 3940.66
+      },
+      {
+        "Clave": null,
+        "Tipo": null,
+        "Situación": null,
+        "Valor catastral (euros)": 6033.03
       }
     ],
     "acciones_valores": [
