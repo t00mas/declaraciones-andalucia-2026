@@ -8,7 +8,7 @@ Explorador de las declaraciones de actividades, bienes e intereses presentadas p
 
 ## Qué incluye
 
-- **1.127 candidatos** de 8 circunscripciones y más de 10 partidos
+- **1.129 candidatos** de 8 circunscripciones y más de 10 partidos
 - Actividades declaradas: cargos públicos, empleo público, empleo privado
 - Bienes declarados: inmuebles (valor catastral), saldo bancario, acciones y fondos, vehículos, seguros de vida, créditos y deudas
 
