@@ -1814,10 +1814,10 @@
     "valor_inmuebles": 97985.78,
     "total_acciones": null,
     "total_vehiculos": 12000.0,
-    "total_seguros": 60000.0,
-    "total_deudas": 86000.0,
+    "total_seguros": null,
+    "total_deudas": 146000.0,
     "total_activos": 110613.07,
-    "patrimonio_neto": 24613.07,
+    "patrimonio_neto": -35386.93,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -1851,16 +1851,15 @@
         "Valor (euros)": 6000.0
       }
     ],
-    "seguros_vida": [
-      {
-        "Descripción": "VINCULADO A HIPOTECA",
-        "Valor (euros)": 60000.0
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": [
       {
         "Descripción": "PRESTAMO HIPOTECARIO",
         "Valor (euros)": 86000.0
+      },
+      {
+        "Descripción": "VINCULADO A HIPOTECA",
+        "Valor (euros)": 60000.0
       }
     ]
   },
@@ -1917,8 +1916,8 @@
     "circunscripcion": "ALMERÍA",
     "saldo_bancario": 1800.0,
     "valor_inmuebles": 250000.0,
-    "total_acciones": null,
-    "total_vehiculos": 60000.0,
+    "total_acciones": 60000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 120000.0,
     "total_activos": 311800.0,
@@ -1951,13 +1950,13 @@
         "Valor catastral (euros)": 120000.0
       }
     ],
-    "acciones_valores": [],
-    "vehiculos_otros": [
+    "acciones_valores": [
       {
-        "Descripción": "KUTXABANK",
+        "Entidad": "KUTXABANK",
         "Valor (euros)": 60000.0
       }
     ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -2561,11 +2560,11 @@
     "saldo_bancario": 20800.0,
     "valor_inmuebles": 46661.61,
     "total_acciones": null,
-    "total_vehiculos": 25000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 7000.0,
-    "total_activos": 92461.61,
-    "patrimonio_neto": 85461.61,
+    "total_activos": 67461.61,
+    "patrimonio_neto": 60461.61,
     "cargos_publicos": [
       {
         "Entidad u organismo": "JUNTA DE ANDALUCIA",
@@ -2589,12 +2588,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHICULO - AUDI A6",
-        "Valor (euros)": 25000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -3525,7 +3519,7 @@
     "valor_inmuebles": 300000.0,
     "total_acciones": null,
     "total_vehiculos": 23400.0,
-    "total_seguros": 150000.0,
+    "total_seguros": null,
     "total_deudas": 173108.0,
     "total_activos": 325850.0,
     "patrimonio_neto": 152742.0,
@@ -3559,12 +3553,7 @@
         "Valor (euros)": 23400.0
       }
     ],
-    "seguros_vida": [
-      {
-        "Descripción": "segurcaixa",
-        "Valor (euros)": 150000.0
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": [
       {
         "Descripción": "credit agricole",
@@ -3875,10 +3864,10 @@
     "valor_inmuebles": 109596.89,
     "total_acciones": 4969.06,
     "total_vehiculos": 6365.0,
-    "total_seguros": 159870.59,
-    "total_deudas": null,
+    "total_seguros": 50000.0,
+    "total_deudas": 109870.59,
     "total_activos": 132801.0,
-    "patrimonio_neto": 132801.0,
+    "patrimonio_neto": 22930.41,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -3923,7 +3912,9 @@
       {
         "Descripción": "SEGUROS AXA VIDA",
         "Valor (euros)": 50000.0
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "HIPOTECA",
         "Valor (euros)": 55080.23
@@ -3932,8 +3923,7 @@
         "Descripción": "HIPOTECA (75,00 %)",
         "Valor (euros)": 54790.36
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "GARCÍA RUIZ, MARÍA DEL MAR",
@@ -4331,12 +4321,12 @@
     "circunscripcion": "ALMERÍA",
     "saldo_bancario": 19.03,
     "valor_inmuebles": 34793.05,
-    "total_acciones": 6960.55,
-    "total_vehiculos": 6960.55,
+    "total_acciones": 810.55,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 48733.18,
-    "patrimonio_neto": 48733.18,
+    "total_activos": 35622.63,
+    "patrimonio_neto": 35622.63,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -4369,42 +4359,9 @@
       {
         "Entidad": "DISTRIBUIDORA INTERNACIONAL",
         "Valor (euros)": 461.45
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "NINGUNONBI BEARINGS EUROPE",
-        "Valor (euros)": 6150.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE PARTICULAR - FORD TRANSIT CONNET",
-        "Valor (euros)": 187.74
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 91.62
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 69.74
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 461.45
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 6150.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -5570,10 +5527,10 @@
     "valor_inmuebles": 98201.4,
     "total_acciones": 5143.26,
     "total_vehiculos": 15000.0,
-    "total_seguros": 80685.33,
-    "total_deudas": null,
+    "total_seguros": 50000.0,
+    "total_deudas": 30685.33,
     "total_activos": 123487.92,
-    "patrimonio_neto": 123487.92,
+    "patrimonio_neto": 92802.59,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -5618,13 +5575,14 @@
       {
         "Descripción": "SEGURO DE VIDA HIPOTECARIO",
         "Valor (euros)": 50000.0
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "PRÉSTAMO HIPOTECARIO",
         "Valor (euros)": 30685.33
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "PALENZUELA MARTÍNEZ, MARÍA DEL MAR",
@@ -5833,11 +5791,11 @@
     "saldo_bancario": 34856.5,
     "valor_inmuebles": 29757.66,
     "total_acciones": null,
-    "total_vehiculos": 10500.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 75114.16,
-    "patrimonio_neto": 75114.16,
+    "total_activos": 64614.16,
+    "patrimonio_neto": 64614.16,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -5856,12 +5814,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHÍCULO - SEAT",
-        "Valor (euros)": 10500.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -7949,10 +7902,10 @@
     "valor_inmuebles": 200000.0,
     "total_acciones": null,
     "total_vehiculos": null,
-    "total_seguros": 160000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 160000.0,
     "total_activos": 210000.0,
-    "patrimonio_neto": 210000.0,
+    "patrimonio_neto": 50000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Puerto Real",
@@ -7983,13 +7936,13 @@
     ],
     "acciones_valores": [],
     "vehiculos_otros": [],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "Préstamo hipotecario Caja Rural",
         "Valor (euros)": 160000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "MUÑOZ SERRANO, JUAN MIGUEL",
@@ -9266,12 +9219,12 @@
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": 1000.0,
     "valor_inmuebles": 481000.0,
-    "total_acciones": 30000.0,
-    "total_vehiculos": 30000.0,
+    "total_acciones": 3000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 60000.0,
-    "total_activos": 542000.0,
-    "patrimonio_neto": 482000.0,
+    "total_activos": 485000.0,
+    "patrimonio_neto": 425000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento Arcos de la Frontera",
@@ -9323,42 +9276,9 @@
       {
         "Entidad": "Participación indivisa Polideportivo del Santiscal (50,00 %)",
         "Valor (euros)": 3000.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "Participación indivisa Polideportivo del Santiscal (50,00 %)",
-        "Valor (euros)": 12000.0
-      },
-      {
-        "Entidad": "Renault Megane - Renault Megane (50,00 %)",
-        "Valor (euros)": 15000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Mitsubishi - Mitsubishi Eclipse (50,00 %)",
-        "Valor (euros)": 3000.0
-      },
-      {
-        "Descripción": "Renault Captur - Renault Captur (50,00 %)",
-        "Valor (euros)": 12000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 15000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -9704,10 +9624,10 @@
     "valor_inmuebles": 263014.13,
     "total_acciones": null,
     "total_vehiculos": 1520.0,
-    "total_seguros": 364950.58,
-    "total_deudas": null,
+    "total_seguros": 248136.47,
+    "total_deudas": 116814.11,
     "total_activos": 272701.56,
-    "patrimonio_neto": 272701.56,
+    "patrimonio_neto": 155887.45,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -9759,19 +9679,20 @@
         "Valor (euros)": 90000.0
       },
       {
+        "Descripción": "GARAJE 2ª VIVIENDA",
+        "Valor (euros)": 8136.47
+      }
+    ],
+    "creditos_deudas": [
+      {
         "Descripción": "HIPOTECARIO 1ª VIVIENDA",
         "Valor (euros)": 50956.99
       },
       {
         "Descripción": "HIPOTECARIO 2ª VIVIENDA (35,00 %)",
         "Valor (euros)": 65857.12
-      },
-      {
-        "Descripción": "GARAJE 2ª VIVIENDA",
-        "Valor (euros)": 8136.47
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "MORENO CAMACHO, LORENA",
@@ -11482,10 +11403,10 @@
     "valor_inmuebles": 90000.0,
     "total_acciones": null,
     "total_vehiculos": 15000.0,
-    "total_seguros": 50000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 50000.0,
     "total_activos": 108000.0,
-    "patrimonio_neto": 108000.0,
+    "patrimonio_neto": 58000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO VILLAMARTIN",
@@ -11516,13 +11437,13 @@
         "Valor (euros)": 15000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "HIPOTECA BBVA",
         "Valor (euros)": 50000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "RÍOS FERNÁNDEZ, ROBERTO",
@@ -12030,10 +11951,10 @@
     "valor_inmuebles": 558105.44,
     "total_acciones": 23789.65,
     "total_vehiculos": 21000.0,
-    "total_seguros": 55810.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 55810.0,
     "total_activos": 664130.21,
-    "patrimonio_neto": 664130.21,
+    "patrimonio_neto": 608320.21,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -12112,13 +12033,13 @@
         "Valor (euros)": 21000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "PRESTAMO HIPOTECARIO",
         "Valor (euros)": 55810.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "POZA MÉNDEZ, EVA MARÍA",
@@ -12202,10 +12123,10 @@
     "valor_inmuebles": 71480.25,
     "total_acciones": null,
     "total_vehiculos": 6000.0,
-    "total_seguros": 12480.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 12480.0,
     "total_activos": 81065.72,
-    "patrimonio_neto": 81065.72,
+    "patrimonio_neto": 68585.72,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -12233,13 +12154,13 @@
         "Valor (euros)": 6000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "PRESTAMO HIPOTECARIO",
         "Valor (euros)": 12480.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "DÍAZ JURADO, FRANCISCO JAVIER",
@@ -14746,11 +14667,11 @@
     "saldo_bancario": 3771.0,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 14000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 17771.0,
-    "patrimonio_neto": 17771.0,
+    "total_activos": 3771.0,
+    "patrimonio_neto": 3771.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -14761,12 +14682,7 @@
     ],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "AUTOMOVIL - SEAT LEON",
-        "Valor (euros)": 14000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -16470,12 +16386,12 @@
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 7900.0,
     "valor_inmuebles": 142306.68,
-    "total_acciones": 160548.51,
-    "total_vehiculos": 160541.51,
+    "total_acciones": 125541.51,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 471296.7,
-    "patrimonio_neto": 471296.7,
+    "total_activos": 275748.19,
+    "patrimonio_neto": 275748.19,
     "cargos_publicos": [
       {
         "Entidad u organismo": "PARLAMENTO DE ANDALUCIA",
@@ -16511,50 +16427,9 @@
       {
         "Entidad": "INDUSTRIAS PECUARIAS PEDROCHES (ACCIONES)",
         "Valor (euros)": 29800.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "KUTXABANK (FONDOS DE INVERISONES)",
-        "Valor (euros)": 7.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "KUTXBANK (PLAN PENSIONES)",
-        "Valor (euros)": 15000.0
-      },
-      {
-        "Entidad": "INDUSTRIAS PECUARIAS PEDROCHES (ACCIONES)",
-        "Valor (euros)": 20000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHÍCULO - DS7 CROSSBACK",
-        "Valor (euros)": 70481.15
-      },
-      {
-        "Descripción": "VEHÍCULO - KIA NIRO",
-        "Valor (euros)": 25260.36
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 29800.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 15000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 20000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -16801,12 +16676,12 @@
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 43488.36,
     "valor_inmuebles": 138413.25,
-    "total_acciones": 19455.22,
-    "total_vehiculos": 19435.22,
+    "total_acciones": 11435.22,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 220792.05,
-    "patrimonio_neto": 220792.05,
+    "total_activos": 193336.83,
+    "patrimonio_neto": 193336.83,
     "cargos_publicos": [
       {
         "Entidad u organismo": "JUNTA DE ANDALUCIA",
@@ -16852,30 +16727,9 @@
       {
         "Entidad": "SANTANDER (ACCIONES)",
         "Valor (euros)": 11435.22
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "SANTANDER (ACCIONES)",
-        "Valor (euros)": 20.0
-      },
-      {
-        "Entidad": "Valor (euros)",
-        "Valor (euros)": 8000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHÍCULO - HYUNDAI I20 (50,00 %)",
-        "Valor (euros)": 11435.22
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 8000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -17630,11 +17484,11 @@
     "saldo_bancario": 7000.0,
     "valor_inmuebles": 60000.0,
     "total_acciones": null,
-    "total_vehiculos": 40000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 107000.0,
-    "patrimonio_neto": 107000.0,
+    "total_activos": 67000.0,
+    "patrimonio_neto": 67000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -17656,12 +17510,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHÍCULO PARTICULAR - AUDI",
-        "Valor (euros)": 40000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -17861,10 +17710,10 @@
     "valor_inmuebles": 156000.0,
     "total_acciones": null,
     "total_vehiculos": 29000.0,
-    "total_seguros": 95332.31,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 95332.31,
     "total_activos": 193500.0,
-    "patrimonio_neto": 193500.0,
+    "patrimonio_neto": 98167.69,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -17912,7 +17761,8 @@
         "Valor (euros)": 2000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "HIPOTECA",
         "Valor (euros)": 75865.61
@@ -17921,8 +17771,7 @@
         "Descripción": "PRÉSTAMO PERSONAL",
         "Valor (euros)": 19466.7
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "RODRÍGUEZ MARTÍNEZ, MIRYAN",
@@ -18254,12 +18103,12 @@
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 2670.0,
     "valor_inmuebles": 90420.0,
-    "total_acciones": 11450.0,
-    "total_vehiculos": 11450.0,
+    "total_acciones": 2450.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 48715.0,
-    "total_activos": 115990.0,
-    "patrimonio_neto": 67275.0,
+    "total_activos": 95540.0,
+    "patrimonio_neto": 46825.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE PUENTE GENIL",
@@ -18292,30 +18141,9 @@
       {
         "Entidad": "MUTUTALIDAD DE LA ABOGACIA",
         "Valor (euros)": 2450.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "MUTUTALIDAD DE LA ABOGACIA",
-        "Valor (euros)": 9000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE - FORD MONDEO",
-        "Valor (euros)": 2450.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 9000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -18868,12 +18696,12 @@
     "circunscripcion": "CÓRDOBA",
     "saldo_bancario": 10063.0,
     "valor_inmuebles": 72000.0,
-    "total_acciones": 57831.0,
-    "total_vehiculos": 57831.0,
+    "total_acciones": 831.0,
+    "total_vehiculos": null,
     "total_seguros": 57000.0,
     "total_deudas": null,
-    "total_activos": 197725.0,
-    "patrimonio_neto": 197725.0,
+    "total_activos": 82894.0,
+    "patrimonio_neto": 82894.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -18900,30 +18728,9 @@
       {
         "Entidad": "La Caixa",
         "Valor (euros)": 831.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "La Caixa",
-        "Valor (euros)": 57000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "My Box Vida(La Caixa)",
-        "Valor (euros)": 831.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 57000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "LA CAIXA",
@@ -19016,11 +18823,11 @@
     "saldo_bancario": null,
     "valor_inmuebles": 250000.0,
     "total_acciones": null,
-    "total_vehiculos": 28000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 70000.0,
-    "total_activos": 278000.0,
-    "patrimonio_neto": 208000.0,
+    "total_activos": 250000.0,
+    "patrimonio_neto": 180000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -19038,16 +18845,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE (50,00 %)",
-        "Valor (euros)": 8000.0
-      },
-      {
-        "Descripción": "COCHE (50,00 %)",
-        "Valor (euros)": 20000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -21114,10 +20912,10 @@
     "valor_inmuebles": 100533.92,
     "total_acciones": null,
     "total_vehiculos": null,
-    "total_seguros": 100000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 100000.0,
     "total_activos": 100533.92,
-    "patrimonio_neto": 100533.92,
+    "patrimonio_neto": 533.92,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -21143,13 +20941,13 @@
     ],
     "acciones_valores": [],
     "vehiculos_otros": [],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "PRESTAMO HIPOTECARIO",
         "Valor (euros)": 100000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "DE CASTRO SIERRA, GUSTAVO",
@@ -21245,11 +21043,11 @@
     "saldo_bancario": null,
     "valor_inmuebles": 68000.0,
     "total_acciones": null,
-    "total_vehiculos": 30000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 17000.0,
-    "total_activos": 98000.0,
-    "patrimonio_neto": 81000.0,
+    "total_activos": 68000.0,
+    "patrimonio_neto": 51000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE ALBOLOTE -GRANADA-",
@@ -21280,12 +21078,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "TURISMO - BMW SERIE 1",
-        "Valor (euros)": 30000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -21946,14 +21739,6 @@
       {
         "Descripción": "AUDI Q3 SPORTBACK 35",
         "Valor (euros)": 22000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -22008,10 +21793,10 @@
     "valor_inmuebles": 79895.24,
     "total_acciones": 12636.7,
     "total_vehiculos": 12500.0,
-    "total_seguros": 130590.0,
-    "total_deudas": 50020.28,
+    "total_seguros": 79590.0,
+    "total_deudas": 101020.28,
     "total_activos": 116033.7,
-    "patrimonio_neto": 66013.42,
+    "patrimonio_neto": 15013.42,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -22069,10 +21854,6 @@
       {
         "Descripción": "ALLIANZ",
         "Valor (euros)": 79590.0
-      },
-      {
-        "Descripción": "ALLIANZ (HIPOTECA)",
-        "Valor (euros)": 51000.0
       }
     ],
     "creditos_deudas": [
@@ -22083,6 +21864,10 @@
       {
         "Descripción": "PRESTAMO HIPOTECARIO (50,00 %)",
         "Valor (euros)": 47782.53
+      },
+      {
+        "Descripción": "ALLIANZ (HIPOTECA)",
+        "Valor (euros)": 51000.0
       }
     ]
   },
@@ -22306,12 +22091,12 @@
     "circunscripcion": "GRANADA",
     "saldo_bancario": 7251.5,
     "valor_inmuebles": 105040.95,
-    "total_acciones": 165236.0,
-    "total_vehiculos": 165100.0,
+    "total_acciones": 16100.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 208479.18,
-    "total_activos": 442628.45,
-    "patrimonio_neto": 234149.27,
+    "total_activos": 128392.45,
+    "patrimonio_neto": -80086.73,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE BAZA",
@@ -22344,54 +22129,9 @@
       {
         "Entidad": "NOVATIC CONSULTORES S.C (1,00 %)",
         "Valor (euros)": 16100.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "NOVATIC CONSULTORES S.C (1,00 %)",
-        "Valor (euros)": 1.0
-      },
-      {
-        "Entidad": "Valor (euros)",
-        "Valor (euros)": 135.0
-      },
-      {
-        "Entidad": "Descripción",
-        "Valor (euros)": 25000.0
-      },
-      {
-        "Entidad": "AUTOMOVIL TURISMO - MG PHEV",
-        "Valor (euros)": 9000.0
-      },
-      {
-        "Entidad": "AUTOMOVIL TURISMO - DACIA DUSTER 1.5",
-        "Valor (euros)": 115000.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "AUTOMOVIL TURISMO - MG PHEV",
-        "Valor (euros)": 16100.0
-      },
-      {
-        "Descripción": "AUTOMOVIL TURISMO - DACIA DUSTER 1.5",
-        "Valor (euros)": 25000.0
-      },
-      {
-        "Descripción": "VEHÍCULO PESADO AGRÍCOLA - VALTRA N135 DIRECT",
-        "Valor (euros)": 9000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 115000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -22452,10 +22192,10 @@
     "valor_inmuebles": 291803.97,
     "total_acciones": null,
     "total_vehiculos": 19000.0,
-    "total_seguros": 234348.23,
-    "total_deudas": null,
+    "total_seguros": 51000.0,
+    "total_deudas": 183348.23,
     "total_activos": 325440.07,
-    "patrimonio_neto": 325440.07,
+    "patrimonio_neto": 142091.84,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE CULLAR VEGA",
@@ -22533,19 +22273,20 @@
         "Valor (euros)": 42000.0
       },
       {
-        "Descripción": "HIPOTECA ABIERTA LA CAIXA",
-        "Valor (euros)": 53348.23
-      },
-      {
         "Descripción": "ICO SEGURO SERVICIOS INMOBILIARIOS",
         "Valor (euros)": 9000.0
+      }
+    ],
+    "creditos_deudas": [
+      {
+        "Descripción": "HIPOTECA ABIERTA LA CAIXA",
+        "Valor (euros)": 53348.23
       },
       {
         "Descripción": "PRÉSTAMO DE GEOASESORES, S.L (50,00 %)",
         "Valor (euros)": 130000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "PERALES LOPEZ, CELIA",
@@ -22832,7 +22573,7 @@
     "valor_inmuebles": 6060563.0,
     "total_acciones": null,
     "total_vehiculos": 600.0,
-    "total_seguros": 60000.0,
+    "total_seguros": null,
     "total_deudas": 123640.0,
     "total_activos": 6062254.32,
     "patrimonio_neto": 5938614.32,
@@ -22859,12 +22600,7 @@
         "Valor (euros)": 600.0
       }
     ],
-    "seguros_vida": [
-      {
-        "Descripción": "SEGURO VIDA HIPOTECARIO CAIXABANK",
-        "Valor (euros)": 60000.0
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": [
       {
         "Descripción": "HIPOTECA VIVIENDA (50,00 %)",
@@ -22942,12 +22678,12 @@
     "circunscripcion": "GRANADA",
     "saldo_bancario": 1300.0,
     "valor_inmuebles": null,
-    "total_acciones": null,
-    "total_vehiculos": 10000.0,
+    "total_acciones": 6000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 11300.0,
-    "patrimonio_neto": 11300.0,
+    "total_activos": 7300.0,
+    "patrimonio_neto": 7300.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE CENES",
@@ -22963,17 +22699,13 @@
       }
     ],
     "bienes_inmuebles": [],
-    "acciones_valores": [],
-    "vehiculos_otros": [
+    "acciones_valores": [
       {
-        "Descripción": "CAIZABANK",
+        "Entidad": "CAIZABANK",
         "Valor (euros)": 6000.0
-      },
-      {
-        "Descripción": "TURISMO - RENAULT LAGUNA",
-        "Valor (euros)": 4000.0
       }
     ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -23342,10 +23074,10 @@
     "valor_inmuebles": 36392.95,
     "total_acciones": null,
     "total_vehiculos": 29000.0,
-    "total_seguros": 66730.58,
-    "total_deudas": null,
+    "total_seguros": 33365.29,
+    "total_deudas": 33365.29,
     "total_activos": 117592.95,
-    "patrimonio_neto": 117592.95,
+    "patrimonio_neto": 84227.66,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE LOJA",
@@ -23380,13 +23112,14 @@
       {
         "Descripción": "CAIXABANK",
         "Valor (euros)": 33365.29
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "HIPOTECA CAIXABANK",
         "Valor (euros)": 33365.29
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "PARRA MAESTRA, ALBERTO",
@@ -23890,9 +23623,9 @@
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": 21000.0,
+    "total_deudas": null,
     "total_activos": 112000.0,
-    "patrimonio_neto": 91000.0,
+    "patrimonio_neto": 112000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE PADUL",
@@ -23930,12 +23663,7 @@
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
-    "creditos_deudas": [
-      {
-        "Descripción": "HIPOTECA",
-        "Valor (euros)": 21000.0
-      }
-    ]
+    "creditos_deudas": []
   },
   {
     "nombre": "SÁNCHEZ SABIO, MARÍA PILAR",
@@ -24427,11 +24155,11 @@
     "saldo_bancario": 8000.0,
     "valor_inmuebles": 23950.0,
     "total_acciones": null,
-    "total_vehiculos": 9000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 55000.0,
-    "total_activos": 40950.0,
-    "patrimonio_neto": -14050.0,
+    "total_activos": 31950.0,
+    "patrimonio_neto": -23050.0,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -24450,12 +24178,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE PARTICULAR - VOLKSWAGEN TOURAN",
-        "Valor (euros)": 9000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -25833,11 +25556,11 @@
     "saldo_bancario": 20000.0,
     "valor_inmuebles": 117000.0,
     "total_acciones": null,
-    "total_vehiculos": 50000.0,
+    "total_vehiculos": null,
     "total_seguros": 50000.0,
     "total_deudas": 120000.0,
-    "total_activos": 187000.0,
-    "patrimonio_neto": 67000.0,
+    "total_activos": 137000.0,
+    "patrimonio_neto": 17000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -25855,16 +25578,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "SKODA FABIA",
-        "Valor (euros)": 10000.0
-      },
-      {
-        "Descripción": "VOLVO XC40",
-        "Valor (euros)": 40000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "SEGURO DE VIDA HIPOTECA BBVA",
@@ -27086,10 +26800,10 @@
     "valor_inmuebles": null,
     "total_acciones": null,
     "total_vehiculos": 17000.0,
-    "total_seguros": 9154.29,
-    "total_deudas": null,
+    "total_seguros": 4125.65,
+    "total_deudas": 5028.64,
     "total_activos": 102413.73,
-    "patrimonio_neto": 102413.73,
+    "patrimonio_neto": 97385.09,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE GIBRALEON",
@@ -27114,15 +26828,16 @@
     ],
     "seguros_vida": [
       {
-        "Descripción": "PRÉSTAMO PERSONAL",
-        "Valor (euros)": 5028.64
-      },
-      {
         "Descripción": "SEGURO INDIVIDUAL DE VIDA GENERALI AHORRO III",
         "Valor (euros)": 4125.65
       }
     ],
-    "creditos_deudas": []
+    "creditos_deudas": [
+      {
+        "Descripción": "PRÉSTAMO PERSONAL",
+        "Valor (euros)": 5028.64
+      }
+    ]
   },
   {
     "nombre": "MÁRQUEZ LANCHA, JUAN ANTONIO",
@@ -29050,11 +28765,11 @@
     "saldo_bancario": 40000.0,
     "valor_inmuebles": 125000.0,
     "total_acciones": null,
-    "total_vehiculos": 21000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 45000.0,
-    "total_activos": 186000.0,
-    "patrimonio_neto": 141000.0,
+    "total_activos": 165000.0,
+    "patrimonio_neto": 120000.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -29078,16 +28793,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE PARTICULAR - FORD FOCUS (50,00 %)",
-        "Valor (euros)": 14000.0
-      },
-      {
-        "Descripción": "MOTO - HONDA (50,00 %)",
-        "Valor (euros)": 7000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -30415,12 +30121,12 @@
     "circunscripcion": "HUELVA",
     "saldo_bancario": null,
     "valor_inmuebles": 150000.0,
-    "total_acciones": 10000.0,
+    "total_acciones": null,
     "total_vehiculos": 20000.0,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 180000.0,
-    "patrimonio_neto": 180000.0,
+    "total_activos": 170000.0,
+    "patrimonio_neto": 170000.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Isla Cristina",
@@ -30437,12 +30143,7 @@
         "Valor catastral (euros)": 150000.0
       }
     ],
-    "acciones_valores": [
-      {
-        "Entidad": "Santander",
-        "Valor (euros)": 10000.0
-      }
-    ],
+    "acciones_valores": [],
     "vehiculos_otros": [
       {
         "Descripción": "Coche - Mercedes 220 CDI",
@@ -30736,9 +30437,9 @@
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
-    "total_deudas": 165000.0,
+    "total_deudas": null,
     "total_activos": 84949.73,
-    "patrimonio_neto": -80050.27,
+    "patrimonio_neto": 84949.73,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -30759,12 +30460,7 @@
     "acciones_valores": [],
     "vehiculos_otros": [],
     "seguros_vida": [],
-    "creditos_deudas": [
-      {
-        "Descripción": "HIPOTECA UNICAJA",
-        "Valor (euros)": 165000.0
-      }
-    ]
+    "creditos_deudas": []
   },
   {
     "nombre": "RODRÍGUEZ MORENO, FRANCISCO JOSÉ",
@@ -31855,11 +31551,11 @@
     "saldo_bancario": 4000.0,
     "valor_inmuebles": 125000.0,
     "total_acciones": null,
-    "total_vehiculos": 7000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 136000.0,
-    "patrimonio_neto": 136000.0,
+    "total_activos": 129000.0,
+    "patrimonio_neto": 129000.0,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -31884,12 +31580,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Coche - Audi Q3",
-        "Valor (euros)": 7000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -32001,11 +31692,11 @@
     "saldo_bancario": 300.0,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 2500.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 2800.0,
-    "patrimonio_neto": 2800.0,
+    "total_activos": 300.0,
+    "patrimonio_neto": 300.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -32016,12 +31707,7 @@
     ],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Coche - Honda Civic",
-        "Valor (euros)": 2500.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -33733,11 +33419,11 @@
     "saldo_bancario": 11742.0,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 10000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 21742.0,
-    "patrimonio_neto": 21742.0,
+    "total_activos": 11742.0,
+    "patrimonio_neto": 11742.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE LA CAROLINA",
@@ -33749,12 +33435,7 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHICULO - FIAT 500L",
-        "Valor (euros)": 10000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -34633,11 +34314,11 @@
     "saldo_bancario": 18476.42,
     "valor_inmuebles": 161355.73,
     "total_acciones": null,
-    "total_vehiculos": 8140.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 187972.15,
-    "patrimonio_neto": 187972.15,
+    "total_activos": 179832.15,
+    "patrimonio_neto": 179832.15,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO LA PUERTA DE SEGURA",
@@ -34673,20 +34354,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Turismo (50%) - Mercedez Benz C220 CDI",
-        "Valor (euros)": 3510.0
-      },
-      {
-        "Descripción": "Automóvil (50%) - Opel Vectra",
-        "Valor (euros)": 2040.0
-      },
-      {
-        "Descripción": "Automóvil (50%) - Renault Koleos",
-        "Valor (euros)": 2590.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -34931,11 +34599,11 @@
     "saldo_bancario": 4000.0,
     "valor_inmuebles": 121005.45,
     "total_acciones": null,
-    "total_vehiculos": 47386.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 172391.45,
-    "patrimonio_neto": 172391.45,
+    "total_activos": 125005.45,
+    "patrimonio_neto": 125005.45,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO NAVAS DE SAN JUAN",
@@ -34966,16 +34634,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "FIAT PUNTO AÑO 2007",
-        "Valor (euros)": 2786.0
-      },
-      {
-        "Descripción": "MERCEDES BENZ E270 CDI AÑO 2004",
-        "Valor (euros)": 44600.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": []
   },
@@ -35103,10 +34762,10 @@
     "valor_inmuebles": 46000.0,
     "total_acciones": null,
     "total_vehiculos": 3500.0,
-    "total_seguros": 5000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 5000.0,
     "total_activos": 52500.0,
-    "patrimonio_neto": 52500.0,
+    "patrimonio_neto": 47500.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE CAZORLA",
@@ -35140,13 +34799,13 @@
         "Valor (euros)": 500.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "PRÉSTAMO HIPOTECARIO VIVIENDA",
         "Valor (euros)": 5000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "MONTÁVEZ SÁNCHEZ, DOLORES",
@@ -35253,11 +34912,11 @@
     "saldo_bancario": null,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 3077.0,
+    "total_vehiculos": null,
     "total_seguros": 72519.22,
     "total_deudas": null,
-    "total_activos": 3077.0,
-    "patrimonio_neto": 3077.0,
+    "total_activos": null,
+    "patrimonio_neto": null,
     "cargos_publicos": [
       {
         "Entidad u organismo": "Ayuntamiento de Linares",
@@ -35269,12 +34928,7 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Automóvil - KIA Sportage 2015",
-        "Valor (euros)": 3077.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "Protección familiar",
@@ -35349,10 +35003,10 @@
     "valor_inmuebles": 78321.13,
     "total_acciones": null,
     "total_vehiculos": 25000.0,
-    "total_seguros": 43000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 43000.0,
     "total_activos": 107321.13,
-    "patrimonio_neto": 107321.13,
+    "patrimonio_neto": 64321.13,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -35371,7 +35025,8 @@
         "Valor (euros)": 25000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "BANCO SANTANDER CREDITO HIPOTECARIO",
         "Valor (euros)": 30000.0
@@ -35380,8 +35035,7 @@
         "Descripción": "BANCO SANTANDER PRESTAMO PRESONAL",
         "Valor (euros)": 13000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "CALERO MENA, FRANCISCA PAULA",
@@ -36623,12 +36277,12 @@
     "circunscripcion": "JAÉN",
     "saldo_bancario": 97000.0,
     "valor_inmuebles": 96104.24,
-    "total_acciones": 6037.32,
-    "total_vehiculos": 6032.32,
+    "total_acciones": 488.32,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 117725.0,
-    "total_activos": 205173.88,
-    "patrimonio_neto": 87448.88,
+    "total_activos": 193592.56,
+    "patrimonio_neto": 75867.56,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -36654,34 +36308,9 @@
       {
         "Entidad": "TRADE REPUBLIC (50,00 %)",
         "Valor (euros)": 335.96
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "COINBASE (50,00 %)",
-        "Valor (euros)": 5.0
-      },
-      {
-        "Entidad": "TRADE REPUBLIC (50,00 %)",
-        "Valor (euros)": 5544.0
       }
     ],
-    "vehiculos_otros": [
-      {
-        "Descripción": "VEHÍCULO - MAZDA CX5 (50,00 %)",
-        "Valor (euros)": 152.36
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 335.96
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 5544.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -37272,10 +36901,10 @@
     "valor_inmuebles": null,
     "total_acciones": null,
     "total_vehiculos": 27000.0,
-    "total_seguros": 33593.08,
-    "total_deudas": null,
+    "total_seguros": 32226.06,
+    "total_deudas": 1367.02,
     "total_activos": 33475.94,
-    "patrimonio_neto": 33475.94,
+    "patrimonio_neto": 32108.92,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -37300,13 +36929,14 @@
       {
         "Descripción": "ICO",
         "Valor (euros)": 2226.06
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "PRESTAMO PERSONAL",
         "Valor (euros)": 1367.02
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "RODRIGO SERRANO, LUIS",
@@ -37400,11 +37030,11 @@
     "saldo_bancario": 25708.93,
     "valor_inmuebles": 88742.36,
     "total_acciones": null,
-    "total_vehiculos": 21700.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 104526.69,
-    "total_activos": 136151.29,
-    "patrimonio_neto": 31624.6,
+    "total_activos": 114451.29,
+    "patrimonio_neto": 9924.6,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -37422,12 +37052,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "HONDA CIVIC 1.6 I-DTEC ELEGANCE / SPORT NAVI PACK",
-        "Valor (euros)": 21700.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -40574,10 +40199,10 @@
     "valor_inmuebles": 464114.87,
     "total_acciones": 98657.87,
     "total_vehiculos": null,
-    "total_seguros": 773310.82,
-    "total_deudas": null,
+    "total_seguros": 244631.0,
+    "total_deudas": 528679.82,
     "total_activos": 573224.74,
-    "patrimonio_neto": 573224.74,
+    "patrimonio_neto": 44544.92,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE MARBELLA",
@@ -40666,7 +40291,9 @@
       {
         "Descripción": "SEGURO VIDA ACCIDENTES",
         "Valor (euros)": 40000.0
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "PRESTAMO HIPOTECARIO VIVIENDA (50,00 %)",
         "Valor (euros)": 57809.19
@@ -40679,8 +40306,7 @@
         "Descripción": "PRESTAMO PERSONAL",
         "Valor (euros)": 13890.97
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "EXTREMERA LÓPEZ, SANDRA JESÚS",
@@ -44970,10 +44596,10 @@
     "valor_inmuebles": 68899.07,
     "total_acciones": 4693.0,
     "total_vehiculos": 26000.0,
-    "total_seguros": 3000.0,
-    "total_deudas": null,
+    "total_seguros": null,
+    "total_deudas": 3000.0,
     "total_activos": 106542.07,
-    "patrimonio_neto": 106542.07,
+    "patrimonio_neto": 103542.07,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -45012,13 +44638,13 @@
         "Valor (euros)": 8000.0
       }
     ],
-    "seguros_vida": [
+    "seguros_vida": [],
+    "creditos_deudas": [
       {
         "Descripción": "ING, PRÉSTAMO PERSONAL",
         "Valor (euros)": 3000.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "PÉREZ GARZÓN, MARÍA JOSÉ",
@@ -46788,11 +46414,11 @@
     "saldo_bancario": 43675.54,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 14000.0,
+    "total_vehiculos": null,
     "total_seguros": 150000.0,
     "total_deudas": null,
-    "total_activos": 57675.54,
-    "patrimonio_neto": 57675.54,
+    "total_activos": 43675.54,
+    "patrimonio_neto": 43675.54,
     "cargos_publicos": [
       {
         "Entidad u organismo": "CONSEJO SOCIAL UNIVERSIDAD PABLO DE OLAVIDE",
@@ -46809,12 +46435,7 @@
     ],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "CUADRO - DE GABRIEL SALVADOR CRUZ (EL MAESTRO DEL HILO)",
-        "Valor (euros)": 14000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "ABANCA SEGUROS",
@@ -46926,11 +46547,11 @@
     "saldo_bancario": 3817.17,
     "valor_inmuebles": 115074.42,
     "total_acciones": 6496.42,
-    "total_vehiculos": 17730.0,
+    "total_vehiculos": 15700.0,
     "total_seguros": null,
     "total_deudas": 60884.25,
-    "total_activos": 143118.01,
-    "patrimonio_neto": 82233.76,
+    "total_activos": 141088.01,
+    "patrimonio_neto": 80203.76,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO DE ARAHAL",
@@ -46984,18 +46605,6 @@
       {
         "Descripción": "MOTO - SUZUKI",
         "Valor (euros)": 13700.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 2030.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": null
       }
     ],
     "seguros_vida": [],
@@ -47440,10 +47049,10 @@
     "valor_inmuebles": 86468.96,
     "total_acciones": null,
     "total_vehiculos": 9000.0,
-    "total_seguros": 274920.0,
-    "total_deudas": null,
+    "total_seguros": 144000.0,
+    "total_deudas": 130920.0,
     "total_activos": 152810.5,
-    "patrimonio_neto": 152810.5,
+    "patrimonio_neto": 21890.5,
     "cargos_publicos": [
       {
         "Entidad u organismo": "DIPUTACION DE SEVILLA",
@@ -47477,13 +47086,14 @@
       {
         "Descripción": "SEGURO DE VIDA VINCULADO A PRESTAMO HIPOTECARIO",
         "Valor (euros)": 144000.0
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "Crédito hipotecario",
         "Valor (euros)": 130920.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "MOYANO MOLINA, ALEJANDRO",
@@ -47677,10 +47287,10 @@
     "valor_inmuebles": 272000.0,
     "total_acciones": null,
     "total_vehiculos": 28000.0,
-    "total_seguros": 40000.0,
-    "total_deudas": 122615.88,
+    "total_seguros": null,
+    "total_deudas": 162615.88,
     "total_activos": 351000.0,
-    "patrimonio_neto": 228384.12,
+    "patrimonio_neto": 188384.12,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [],
@@ -47711,12 +47321,7 @@
         "Valor (euros)": 28000.0
       }
     ],
-    "seguros_vida": [
-      {
-        "Descripción": "BANKINTER HIPOTECARIOS",
-        "Valor (euros)": 40000.0
-      }
-    ],
+    "seguros_vida": [],
     "creditos_deudas": [
       {
         "Descripción": "HIPOTECA (50,00 %)",
@@ -47725,6 +47330,10 @@
       {
         "Descripción": "HIPOTECA (50,00 %)",
         "Valor (euros)": 57000.0
+      },
+      {
+        "Descripción": "BANKINTER HIPOTECARIOS",
+        "Valor (euros)": 40000.0
       }
     ]
   },
@@ -48462,11 +48071,11 @@
     "saldo_bancario": 31535.0,
     "valor_inmuebles": null,
     "total_acciones": null,
-    "total_vehiculos": 27000.0,
+    "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 22000.0,
-    "total_activos": 58535.0,
-    "patrimonio_neto": 36535.0,
+    "total_activos": 31535.0,
+    "patrimonio_neto": 9535.0,
     "cargos_publicos": [
       {
         "Entidad u organismo": "AYUNTAMIENTO VILLANUEVA DE SAN JUAN",
@@ -48478,12 +48087,7 @@
     "actividades_privadas": [],
     "bienes_inmuebles": [],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "COCHE",
-        "Valor (euros)": 27000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [],
     "creditos_deudas": [
       {
@@ -51503,12 +51107,12 @@
     "circunscripcion": "SEVILLA",
     "saldo_bancario": 400.0,
     "valor_inmuebles": null,
-    "total_acciones": 33000.0,
-    "total_vehiculos": 60000.0,
+    "total_acciones": 3000.0,
+    "total_vehiculos": 27000.0,
     "total_seguros": null,
     "total_deudas": null,
-    "total_activos": 93400.0,
-    "patrimonio_neto": 93400.0,
+    "total_activos": 30400.0,
+    "patrimonio_neto": 30400.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -51522,32 +51126,12 @@
       {
         "Entidad": "NEXT GENERATION INTELIGENCIA ARTIFICIAL SL",
         "Valor (euros)": 3000.0
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": null,
-        "Valor (euros)": null
-      },
-      {
-        "Entidad": "NEXT GENERATION INTELIGENCIA ARTIFICIAL SL",
-        "Valor (euros)": 30000.0
       }
     ],
     "vehiculos_otros": [
       {
         "Descripción": "LEASING VEHÍCULO",
         "Valor (euros)": 27000.0
-      },
-      {
-        "Descripción": "COCHE - FORD MUSTANG MACH E",
-        "Valor (euros)": 3000.0
-      },
-      {
-        "Descripción": null,
-        "Valor (euros)": 30000.0
       }
     ],
     "seguros_vida": [],
@@ -52649,11 +52233,11 @@
     "saldo_bancario": 40000.0,
     "valor_inmuebles": 450000.0,
     "total_acciones": null,
-    "total_vehiculos": 25000.0,
+    "total_vehiculos": null,
     "total_seguros": 97000.0,
     "total_deudas": 274000.0,
-    "total_activos": 515000.0,
-    "patrimonio_neto": 241000.0,
+    "total_activos": 490000.0,
+    "patrimonio_neto": 216000.0,
     "cargos_publicos": [],
     "actividades_publicas": [
       {
@@ -52684,12 +52268,7 @@
       }
     ],
     "acciones_valores": [],
-    "vehiculos_otros": [
-      {
-        "Descripción": "Turismo",
-        "Valor (euros)": 25000.0
-      }
-    ],
+    "vehiculos_otros": [],
     "seguros_vida": [
       {
         "Descripción": "Seguro de vida hipotecario",
@@ -52896,10 +52475,10 @@
     "valor_inmuebles": 33730.0,
     "total_acciones": null,
     "total_vehiculos": null,
-    "total_seguros": 346009.0,
-    "total_deudas": null,
+    "total_seguros": 154000.0,
+    "total_deudas": 192009.0,
     "total_activos": 67460.0,
-    "patrimonio_neto": 67460.0,
+    "patrimonio_neto": -124549.0,
     "cargos_publicos": [],
     "actividades_publicas": [],
     "actividades_privadas": [
@@ -52922,7 +52501,9 @@
       {
         "Descripción": "Seguro de vida",
         "Valor (euros)": 154000.0
-      },
+      }
+    ],
+    "creditos_deudas": [
       {
         "Descripción": "Hipoteca (50,00 %)",
         "Valor (euros)": 149769.0
@@ -52931,8 +52512,7 @@
         "Descripción": "Préstamo personal (50,00 %)",
         "Valor (euros)": 42240.0
       }
-    ],
-    "creditos_deudas": []
+    ]
   },
   {
     "nombre": "MORÓN CIVANTO, RAMÓN JOSÉ",

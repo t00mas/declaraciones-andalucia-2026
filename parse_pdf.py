@@ -149,6 +149,9 @@ def parse_rowmajor(text, headers):
     return rows
 
 
+_ALL_HEADERS = frozenset(h for v in COLS.values() for h in v)
+
+
 def parse_colmajor(text, headers):
     """Column-major: each chunk = header followed by ALL values for that column."""
     hset = set(headers)
@@ -161,6 +164,8 @@ def parse_colmajor(text, headers):
         if lines[0] in hset:
             current_header = lines[0]
             col_values[current_header].extend(lines[1:])
+        elif lines[0] in _ALL_HEADERS:
+            break  # displaced content from another section starts here
         elif current_header:
             col_values[current_header].extend(lines)
     max_rows = max((len(v) for v in col_values.values()), default=0)
@@ -284,7 +289,7 @@ def parse_candidate(block):
     # seguro check before deuda: "SEGURO VIDA HIPOTECARIO" must match seguro, not hipoteca
     _seg_kw = re.compile(r"(?i)(segur|póliza)")
     _deu_kw = re.compile(r"(?i)(hipoteca|préstamo|prestamo|crédito|credito|financiaci|pago\s+hip)")
-    if (any(r.get("Entidad") is None for r in acciones)
+    if (any(r.get("Entidad") is None and r.get("Valor (euros)") is not None for r in acciones)
             and re.search(r"(?m)^Descripción\s*$", sec23_text)):
         displaced_rows = parse_table("2.4", sec23_text)
         for row in displaced_rows:
@@ -300,19 +305,38 @@ def parse_candidate(block):
                 vehiculos.append(row)
         acciones = [r for r in acciones if r.get("Entidad") is not None or r.get("Valor (euros)") is None]
 
-    # Also re-route deuda/seguro items that pdftotext displaced into the 2.4 (vehiculos) area.
-    veh_clean, veh_displaced = [], []
+    # Re-route deuda/seguro/acciones items displaced into vehiculos (2.4 area).
+    _seg_term = re.compile(r"(?i)(seguro|protec|póliza|amortizac|vida\b)")
+    _bank_kw = re.compile(r"(?i)(kutxabank|caizabank|caixabank|kutxa\b|bbva|unicaja|sabadell|ibercaja|bankia|la\s+caixa)")
+    veh_clean = []
     for row in vehiculos:
         desc = str(row.get("Descripción") or "").strip()
         if _seg_kw.search(desc):
-            veh_displaced.append(row)
             seguros.append(row)
         elif _deu_kw.search(desc):
-            veh_displaced.append(row)
             deudas.append(row)
+        elif _bank_kw.search(desc):
+            if _seg_term.search(desc):
+                seguros.append({"Descripción": desc, "Valor (euros)": row.get("Valor (euros)")})
+            else:
+                acciones.append({"Entidad": desc, "Valor (euros)": row.get("Valor (euros)")})
         else:
             veh_clean.append(row)
     vehiculos = veh_clean
+
+    # Re-route pure deudas displaced into seguros (2.5 area).
+    # "SEGURO DE VIDA HIPOTECARIO" is a valid seguro; plain "HIPOTECA" / "PRÉSTAMO" is a deuda.
+    seg_clean = []
+    for row in seguros:
+        desc = str(row.get("Descripción") or "").strip()
+        if _deu_kw.search(desc) and not _seg_term.search(desc):
+            deudas.append(row)
+        else:
+            seg_clean.append(row)
+    seguros = seg_clean
+
+    # Drop phantom acciones rows with neither Entidad nor Valor (parse_colmajor artifacts).
+    acciones = [r for r in acciones if r.get("Entidad") is not None or r.get("Valor (euros)") is not None]
 
     saldo_text = sec("2.2")
     saldo_m = re.search(r"[\d.,]+\s*€", saldo_text)
