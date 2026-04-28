@@ -10862,15 +10862,13 @@
     "cargos_publicos": [
       {
         "Cargo desempeñado": "CONCEJAL",
-        "Fecha de nombramiento": "17/06/2023"
+        "Fecha de nombramiento": "17/06/2023",
+        "Entidad u organismo": "AYUNTAMIENTO DE ROTA"
       }
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
-      {
-        "Clave": "Entidad u organismo AYUNTAMIENTO DE ROTA"
-      },
       {
         "Clave": "M",
         "Tipo": "V",
@@ -11315,28 +11313,23 @@
     "partido": "PARTIDO POPULAR",
     "circunscripcion": "CÁDIZ",
     "saldo_bancario": 1800.0,
-    "valor_inmuebles": 120647.5,
+    "valor_inmuebles": 120568.5,
     "total_acciones": null,
     "total_vehiculos": null,
     "total_seguros": null,
     "total_deudas": 28142.31,
-    "total_activos": 122447.5,
-    "patrimonio_neto": 94305.19,
+    "total_activos": 122368.5,
+    "patrimonio_neto": 94226.19,
     "cargos_publicos": [
       {
         "Cargo desempeñado": "CONCEJAL",
-        "Fecha de nombramiento": "17/06/2023"
+        "Fecha de nombramiento": "17/06/2023",
+        "Entidad u organismo": "AYUNTAMIENTO DE BARBATE"
       }
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
-      {
-        "Clave": "Entidad u organismo AYUNTAMIENTO DE BARBATE",
-        "Tipo": "Boletín Oficial de la Junta de Andalucía",
-        "Situación": "BOJA Clave P",
-        "Valor catastral (euros)": 79.0
-      },
       {
         "Clave": "página 5604/88",
         "Tipo": "V",
@@ -25293,28 +25286,23 @@
     "partido": "ANDALUCISTAS - PUEBLO ANDALUZ",
     "circunscripcion": "GRANADA",
     "saldo_bancario": 6200.0,
-    "valor_inmuebles": 150079.0,
+    "valor_inmuebles": 150000.0,
     "total_acciones": null,
     "total_vehiculos": 2000.0,
     "total_seguros": 400000.0,
     "total_deudas": 77172.0,
-    "total_activos": 158279.0,
-    "patrimonio_neto": 81107.0,
+    "total_activos": 158200.0,
+    "patrimonio_neto": 81028.0,
     "cargos_publicos": [
       {
         "Cargo desempeñado": "Concejala",
-        "Fecha de nombramiento": "17/06/2019"
+        "Fecha de nombramiento": "17/06/2019",
+        "Entidad u organismo": "Ayuntamiento de Caniles"
       }
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
     "bienes_inmuebles": [
-      {
-        "Clave": "Entidad u organismo Ayuntamiento de Caniles",
-        "Tipo": "Boletín Oficial de la Junta de Andalucía",
-        "Situación": "BOJA Clave P",
-        "Valor catastral (euros)": 79.0
-      },
       {
         "Clave": "página 5604/189",
         "Tipo": "V",
@@ -48600,16 +48588,13 @@
     "cargos_publicos": [
       {
         "Cargo desempeñado": "CONCEJAL",
-        "Fecha de nombramiento": "17/06/2023"
+        "Fecha de nombramiento": "17/06/2023",
+        "Entidad u organismo": "AYUNTAMIENTO DE VILLANUEVA DEL ARISCAL"
       }
     ],
     "actividades_publicas": [],
     "actividades_privadas": [],
-    "bienes_inmuebles": [
-      {
-        "Clave": "Entidad u organismo AYUNTAMIENTO DE VILLANUEVA DEL ARISCAL"
-      }
-    ],
+    "bienes_inmuebles": [],
     "acciones_valores": [
       {
         "Entidad": "Plan de ahorro general",

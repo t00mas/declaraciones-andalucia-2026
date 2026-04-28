@@ -202,6 +202,17 @@ def parse_candidate(block):
     vehiculos = parse_table("2.4", sec("2.4"))
     seguros = parse_table("2.5", sec("2.5"))
     deudas = parse_table("2.6", sec("2.6"))
+    cargos = parse_table("1.1", sec("1.1"))
+
+    # pdftotext sometimes displaces the "Entidad u organismo" column from section 1.1
+    # into section 2.1's text range. Detect and recover: remove phantom bienes rows and
+    # backfill the entity into the first cargos entry.
+    phantom = [r for r in bienes if str(r.get("Clave", "")).startswith("Entidad u organismo")]
+    if phantom and cargos:
+        entity = re.sub(r"^Entidad u organismo\s*", "", phantom[0]["Clave"]).strip()
+        if entity:
+            cargos[0].setdefault("Entidad u organismo", entity)
+        bienes = [r for r in bienes if r not in phantom]
 
     saldo_text = sec("2.2")
     saldo_m = re.search(r"[\d.,]+\s*€", saldo_text)
@@ -233,7 +244,7 @@ def parse_candidate(block):
         "total_activos": total_activos,
         "patrimonio_neto": patrimonio,
         # Detail tables
-        "cargos_publicos": parse_table("1.1", sec("1.1")),
+        "cargos_publicos": cargos,
         "actividades_publicas": parse_table("1.2", sec("1.2")),
         "actividades_privadas": parse_table("1.3", sec("1.3")),
         "bienes_inmuebles": bienes,
