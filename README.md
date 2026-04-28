@@ -2,6 +2,8 @@
 
 Explorador de las declaraciones de actividades, bienes e intereses presentadas por los candidatos a las elecciones al Parlamento de Andalucía del 17 de mayo de 2026.
 
+**Sitio:** [www.tomaspica.com/declaraciones-andalucia-2026](https://www.tomaspica.com/declaraciones-andalucia-2026/)
+
 **Fuente:** [Boletín Oficial de la Junta de Andalucía, núm. 79 C1, 27 de abril de 2026](https://www.juntadeandalucia.es/eboja)
 
 ## Qué incluye
